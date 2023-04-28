@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header css */
+
+
+header .navbar-brand {
+    color: #DE5979;
+    font-weight: 500;
+    align-items: center;
+    font-size: 26px;
+
+}
+
+header .navbar-brand i{
+    /* font-size: 26px; */
+    margin-right: 10px;
+}
+
+header .navbar .nav_btn{
+    color: #DE5979;
+    border: 1px solid #DE5979;
+    
+}
