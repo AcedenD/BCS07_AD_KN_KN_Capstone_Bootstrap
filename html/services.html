@@ -17,6 +17,12 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- google font: Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -24,52 +30,95 @@
 <body>
     <header>
         <!-- place navbar here -->
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success p-3">
-                <div class="container">
-                    <a class="navbar-brand d-flex" href="#">
-                        <i class="fa-regular fa-handshake"></i> Masterwork</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
+            <div class="container">
+                <a class="navbar-brand d-flex" href="#">
+                    <i class="fa-regular fa-handshake mx-2"></i> Masterwork</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-black">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                Pages
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                                <li><a class="dropdown-item" href="#">Landing page</a></li>
+                                <li>
+                                </li>
+                                <li><a class="dropdown-item" href="#">404 page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Contact</a></li>
+                    </ul>
+
+                    <a href="" class="search-search">
+                        <span class="fa fa-search
+                            "></span>
+                    </a>
+                    <button type="button" class="nav_btn px-4 py-3 rounded-1 mx-2">
+                        SCHEDULE A DEMO
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Contact</a></li>
-                        </ul>
 
-                        <a href=""></a>
-                        <button type="button" class="nav_btn px-4 py-3 rounded-1 mx-2">
-                            SCHEDULE A DEMO
-                        </button>
-
-                    </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
+
     </header>
     <main>
+        <section class="services my-5">
+            <div class="container">
+                <h2 class="text-center fw-bolder mb-5">Our Services</h2>
+                <div class="row justify-content-center align-items-center g-4">
+                    <div class="services_left col-md-12 col-lg-6">
+                        <div class="services_left_title">
+                            <h3>Our Best Services</h3>
+                        </div>
+                        <div class="services_left_content">
+                            <p class="my-4" id="services_left_topP">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi aliquid explicabo
+                                numquam.
+                            </p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque repudiandae eligendi
+                                nisi? Eveniet ea repudiandae laudantium cum? Doloremque est facilis quidem placeat
+                                quibusdam repellat doloribus, id, laboriosam, soluta assumenda vero cumque laborum.
+                                Temporibus, expedita quae!
+                            </p>
+                            <button class="btn-custom mt-lg-5 mt-4">Learn More</button>
+
+                        </div>
+                    </div>
+                    <div class="services_right col-md-12 col-lg-6 mt-lg-0 mt-5">
+                        <div class="row">
+                            <div class="col-6">1</div>
+
+                            <div class="col-6">1</div>
+                            <div class="col-6 mt-5 pt-lg-3">1</div>
+                            <div class="col-6 mt-5 pt-lg-3">1</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </main>
     <footer>

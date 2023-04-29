@@ -4,7 +4,40 @@
     box-sizing: border-box;
 }
 
+html body {
+    font-family: 'Nunito', sans-serif!important;
+}
+
+.btn-custom {
+    background-color: #DE5979;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 52px;
+    font-weight: 500;
+    transition: all 0.5s;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
+.btn-custom:hover {
+    color: #fff;
+    background-color: #d62f58;
+    border-color: #cf2952;
+}
+
+
 /* Header css */
+header .navbar .active{
+    color: #DE5979;
+}
+
+
+header .navbar .navbar-brand:hover {
+    color: #DE5979!important;
+    text-decoration: none;
+}
 
 
 header .navbar-brand {
@@ -12,16 +45,118 @@ header .navbar-brand {
     font-weight: 500;
     align-items: center;
     font-size: 26px;
-
+    text-decoration: none;
 }
 
-header .navbar-brand i{
-    /* font-size: 26px; */
-    margin-right: 10px;
+header .navbar-brand:hover {
+    text-decoration: underline;
 }
+
+
+header .navbar .collapse a span{
+    padding: 12px;
+    background-color: #F7F9FC;
+    border-radius: 50%;
+}
+
+header .navbar .collapse a span:hover{
+    color: black;
+}
+
+header .navbar .collapse .search-search {
+    color:gray
+}
+
+header .navbar .collapse .nav-item{
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.5s;
+}
+
+header .navbar .collapse .nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 5px;
+    /* left: 5px; */
+    background-color: #DE5979;
+    visibility: hidden;
+    transition: all 0.5s !important;
+}
+
+
+header .navbar .collapse .nav-item .nav-link:hover::before{
+    visibility: visible;
+    width: 35%;
+}
+
+header .navbar .collapse .nav-item a{
+    color: black!important;
+    text-decoration: none;
+}
+
+header .navbar .collapse .nav-item a:hover{
+    color: #DE5979!important;
+    text-decoration: none;
+}
+
+header .navbar .collapse .nav-item .active{
+    color: #DE5979!important;
+}
+
+header .navbar .collapse .dropdown-toggle::after {
+    display: none;
+}
+
+header .navbar .collapse .nav-item li a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    /* bottom: 15px; */
+    background-color: #DE5979;
+    visibility: hidden;
+    transition: all 0.5s !important;
+    border: 1px solid #DE5979!important;
+}
+
+
+header .navbar .collapse .nav-item li a:hover::before{
+    visibility: visible;
+    width: 15%;
+}
+
+header .navbar .collapse .nav-item i{
+    color: #DE5979;
+}
+
+
 
 header .navbar .nav_btn{
     color: #DE5979;
     border: 1px solid #DE5979;
-    
+    background-color: white;
+    font-weight: 700;
+}
+
+/* Services css */
+.services h2{
+    font-size: 46px;
+}
+
+.services p#services_left_topP{
+    font-size: 24px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.services h3{
+    font-size: 42px;
+}
+
+.services .services_left button{
+
 }
