@@ -548,6 +548,14 @@ header .navbar .collapse .dropdown-toggle::after {
     display: none;
 }
 
+header .navbar .collapse .dropdown-item.active {
+    background-color: transparent;
+}
+
+header .navbar .collapse .dropdown-item:hover {
+    background-color: transparent;
+}
+
 header .navbar .collapse .nav-item li a::before{
     content: "";
     position: absolute;
@@ -567,9 +575,9 @@ header .navbar .collapse .nav-item li a:hover::before{
 }
 
 header .navbar .collapse .nav-item i{
-    color: #DE5979;
+    color: black;
+    font-size: 10px;
 }
-
 
 
 header .navbar .nav_btn{
@@ -577,6 +585,13 @@ header .navbar .nav_btn{
     border: 1px solid #DE5979;
     background-color: white;
     font-weight: 700;
+    transition: all 0.5s;
+}
+
+header .navbar .nav_btn:hover{
+    color: white;
+    background-color: #DE5979;
+    border: 1px solid #DE5979;
 }
 
 /* Breadcrumb css */
@@ -609,6 +624,10 @@ nav .breadcrumb li i{
 
 
 /* Services css */
+
+.services{
+    background-color: white;
+}
 .services h2{
     font-size: 46px;
     font-weight: 800;
@@ -664,6 +683,97 @@ nav .breadcrumb li i{
     vertical-align: middle;
 }
 
+/* Product */
+.product{
+    background-color: #F7F9FC; 
+}
+
+.product .product-info .product-icon span{
+    font-size: 20px;
+    color: #DE5979;
+    margin-right: 10px;
+    background-color: white;
+    /* background-color: red; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    display: inline-block;
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+}
+
+.product .product-info h4 a{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+
+.product .product-info p{
+    font-size: 16px;
+    color: #5A5A5A;
+    margin-bottom: 10px;
+}
+
+.product .product-info h4 a:hover{
+    color: #DE5979;
+    text-decoration: none;
+}
+
+.product .product-info .product-center img{
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.fServices .heading_title{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.fServices .content-services_left{
+    padding: 32px;
+    border: 1px solid #F7F9FC;
+    border-radius: 6px;
+}
+
+.fServices ul li {
+    font-weight: 400 ;
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+    margin: 15px 0;
+    
+}
+.fServices ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.fServices ul li span.hero_icon {
+    color: #dc4f72;
+    margin-right: 12px;
+    background: rgba(220, 79, 114, 0.1);
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.fServices img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+
 
 
 /* Contact css */
@@ -673,7 +783,7 @@ nav .breadcrumb li i{
 
 .contactUs h2{
     font-size: 46px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .contactUs .img-curve{
@@ -706,6 +816,11 @@ nav .breadcrumb li i{
 @media (max-width: 991px) {
     .contactUs .contact-form{
         left: 0px;
+    }
+
+    .product .product-center {
+        width: 300px;
+        margin: 20px auto 40px;
     }
 }
 
