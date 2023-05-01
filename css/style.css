@@ -27,11 +27,13 @@ html body {
     border-color: #cf2952;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.text-right{
+    text-align: right;
 }
+
+
+
+/* ///////////////     Ky Nguyen Css     /////////////// */
 :root {
     --primary: #dc4f72;
     --secondary: #0d5fa8;
@@ -450,7 +452,7 @@ img.img-curve:hover {
 }
 
 
-/* /////////////////////Aden Css//////////////////////////// */
+/* ///////////////    Aden Css     ///////////////////// */
 
 
 /* Header css */
@@ -660,6 +662,158 @@ nav .breadcrumb li i{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+
+
+/* Contact css */
+.contactUs{
+    background-color: white;
+}
+
+.contactUs h2{
+    font-size: 46px;
+    font-weight: 800;
+}
+
+.contactUs .img-curve{
+    border-radius: 6px;
+}
+
+.header-section h3{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.header-section p{
+    font-size: 16px;
+    color: #5A5A5A;
+}
+
+.contactUs .contact_img{
+    max-width: 90%;
+    height: 80%;
+}
+
+.contactUs .contact-form{
+    position: relative;
+    background-color: white;
+    padding: 32px;
+    left: -75px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 991px) {
+    .contactUs .contact-form{
+        left: 0px;
+    }
+}
+
+
+.contactUs .contact-form .main-form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #5A5A5A;
+}
+
+.contactUs .contact-form .main-form textarea{
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #5A5A5A;
+    resize: none;
+}
+
+.getInTouch{
+    background-color: #F7F9FC;
+    padding: 32px;
+    border-radius: 6px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+}
+
+.getInTouch .contact-info{
+    /* border: 1px solid #DE5979; */
+    border-radius: 6px;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.getInTouch .contact-info:hover{
+    transform: var(--transformY);
+}
+
+.getInTouch .contact-info span{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #DE5979;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FCEDF1;
+    line-height: 40px;
+}
+
+.getInTouch .contact-info p{
+    font-size: 18px;
+    color: var(--text-color);
+    /* line-height: 28px; */
+    font-weight: 600;
+    /* padding: 0; */
+    margin: 0;
+}
+
+.getInTouch .contact-info a{
+    font-size: 18px;
+    color: #5A5A5A;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.getInTouch .contact-info a:hover{
+    color: #DE5979;
+    text-decoration: underline;
+}
+
+.getInTouch .contact-info h4{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+footer .CopyRights a {
+    color: #5a5a5a;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+footer .CopyRights a:hover {
+    color: #DE5979;
+}
+
+footer ul {
+    padding-left: 0;
 }
 
 
