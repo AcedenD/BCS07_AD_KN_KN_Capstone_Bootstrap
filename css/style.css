@@ -512,6 +512,52 @@ header .navbar .collapse .nav-item{
     transition: all 0.5s;
 }
 
+header .navbar .collapse .nav-item .dropdown-menu{
+    transform: translateX(-50px);
+    border: 1px solid #eee;
+
+}
+
+header .navbar .collapse .nav-item .dropdown-menu:before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    transform: rotate(45deg);
+    top: -7px;
+    left: 50%;
+    z-index: -1;
+    visibility: visible;
+    transition: all 0.5s !important;
+    border: 1px solid #eee;
+    border-right: none;
+    border-bottom: none;
+}
+
+header .navbar .collapse .dropdown-menu a.dropdown-item{
+    font-size: 16px;
+    font-weight: 400;
+    color: #656f7b;
+    padding-bottom:14px ;
+    transition: all 0.5s !important;
+    position: relative;
+}
+
+header .navbar .collapse .dropdown-menu a.dropdown-item::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: 13px;
+    background-color: #DE5979;
+    transition: all 0.5s !important;
+}
+
+header .navbar .collapse .dropdown-menu a.dropdown-item:hover::before{
+    width: 20px;
+}
+
 header .navbar .collapse .nav-item .nav-link::before{
     content: "";
     position: absolute;
@@ -555,6 +601,7 @@ header .navbar .collapse .dropdown-item.active {
 header .navbar .collapse .dropdown-item:hover {
     background-color: transparent;
 }
+
 
 header .navbar .collapse .nav-item li a::before{
     content: "";
