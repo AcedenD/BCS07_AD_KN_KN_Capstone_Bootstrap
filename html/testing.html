@@ -30,57 +30,8 @@
 
 <body id="myBody">
     <header>
-        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
-            <div class="container">
-                <a class="navbar-brand d-flex" href="#">
-                    <i class="fa-regular fa-handshake mx-2"></i> Masterwork</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-black">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="./about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./services.html">Services</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
 
-                                Pages
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./blogs.html">Blog Posts</a></li>
-                                <li><a class="dropdown-item" href="./landing.html">Landing page</a></li>
-                                <li>
-                                </li>
-                                <li><a class="dropdown-item" href="./error.html">404 page</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
 
-                    <a href="" class="search-search">
-                        <span class="fa fa-search
-                            "></span>
-                    </a>
-                    <button type="button" class="nav_btn px-4 py-3 rounded-1 mx-2">
-                        SCHEDULE A DEMO
-                    </button>
-
-                </div>
-            </div>
-        </nav> -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
             <div class="container">
                 <a class="navbar-brand d-flex" href="#">
@@ -127,17 +78,29 @@
                                 href="./contact.html">Contact</a>
                         </li>
                     </ul>
+                    <div class="search-right">
+                        <a href="#search" class="search-search">
+                            <span class="fa fa-search
+                                "></span>
+                        </a>
+                        <div class="overlay">
+                            <div class="overlay-content d-flex align-items-center ">
+                                <form class="d-flex gap-0" action="">
+                                    <input type="text" placeholder="Enter Keyword">
+                                    <button type="submit">Search</button>
+                                    <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
 
-                    <a href="#search" class="search-search">
-                        <span class="fa fa-search
-                            "></span>
-                    </a>
 
 
+                    <div class="top-quote">
+                        <a href="#" class="nav_btn px-4 py-3 rounded-1 mx-2">
+                            SCHEDULE A DEMO
+                        </a>
+                    </div>
 
-                    <a href="#" class="nav_btn px-4 py-3 rounded-1 mx-2">
-                        SCHEDULE A DEMO
-                    </a>
 
                     <div class="mode-container" id="switchButton">
                         <i class="far fa-moon"></i>
@@ -150,14 +113,7 @@
                 </div>
             </div>
         </nav>
-        <div class="overlay">
-            <div class="overlay-content d-flex align-items-center ">
-                <form class="d-flex gap-0" action="">
-                    <input type="text" placeholder="Enter Keyword">
-                    <button type="submit">Search</button>
-                    <i class="fa-solid fa-xmark"></i>
-            </div>
-        </div>
+
     </header>
     <main>
         <section id="breadcrumb">
@@ -211,7 +167,7 @@
                     </p>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-12 ">
                         <div class="contact-info">
                             <div class="icon">
                                 <span class="fa fa-location-arrow"></span>
@@ -225,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt-5 mt-md-0">
+                    <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
                         <div class="contact-info">
                             <div class="icon">
                                 <span class="fa fa-phone"></span>
@@ -239,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt-5 mt-lg-0">
+                    <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
                         <div class="contact-info">
                             <div class="icon">
                                 <span class="fa-regular fa-envelope-open"></span>
@@ -277,6 +233,8 @@
 
     <!-- Template JavaScript -->
     <script src="../js/index.js"></script>
+
+    <script src="../js/testing.js"></script>
 </body>
 
 </html>
