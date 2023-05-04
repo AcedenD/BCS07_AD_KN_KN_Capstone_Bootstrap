@@ -96,11 +96,19 @@ html body {
         color: white ;
     }
 
-    .dark .services {
+    .dark .services, .dark .getInTouch .contact-info {
         background-color: #121617;
     }
 
-    .dark .services h2, .dark  h3, .dark .services .services_right h4 a, .dark .services h5, .dark .services h6 , .dark .fServices li{
+    /* .dark .services h2, .dark .services h3, .dark .services .services_right h4 a, .dark .services h5, .dark .services h6 , .dark .fServices li{
+        color: white;
+    }
+
+    .dark .product h2, .dark .product h3, .dark .product h4, .dark .product h5, .dark .product p {
+        color: white;
+    } */
+
+    .dark  h2, .dark  h3, .dark .services .services_right h4 a, .dark h5, .dark .services h6 , .dark .fServices li{
         color: white;
     }
 
@@ -108,15 +116,12 @@ html body {
         color: #B7B7B7;
     }
 
-    .dark .product {
+    .dark .product , .dark .getInTouch {
         background-color: #1A1C1D;
     }
 
-    .dark .product h2, .dark .product h3, .dark .product h4, .dark .product h5, .dark .product p {
-        color: white;
-    }
 
-    .dark .product p {
+    .dark .product p, .dark .getInTouch p, .dark .contactUs p, .dark .getInTouch .contact-info a, .dark .getInTouch .contact-info p {
         color: #B7B7B7;
     }
 
@@ -132,7 +137,7 @@ html body {
         background-color: #1A1C1D;
     }
 
-    .dark .fServices h2, .dark .fServices h3, .dark .fServices h4, .dark .fServices h5, .dark .fServices p {
+    .dark .fServices h2, .dark .fServices h3, .dark .fServices h4, .dark .fServices h5, .dark .fServices p, .dark .getInTouch .contact-info h4  {
         color: white;
     }
 
@@ -144,8 +149,19 @@ html body {
         border: 1px solid #191c1d;
     }
 
+    .dark .contactUs, .dark .contactUs .contact-form {
+        background-color: #121617;
+    }
+
+    .dark .contactUs .contact-form .main-form input, .dark .contactUs .contact-form .main-form textarea {
+        background-color: #1A1C1D !important;
+        border: 1px solid #333;
+    }
 
 
+    .dark .contactMap iframe {
+        filter: grayscale(100%);
+    }
     
 
   
@@ -705,7 +721,7 @@ h2 {
 }
 
 .getInTouch .contact-info:hover{
-    transform: var(--transformY);
+    transform: translateY(-10px);
 }
 
 .getInTouch .contact-info span{
@@ -716,7 +732,7 @@ h2 {
     color: #DE5979;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: #FCEDF1;
+    background-color: rgba(220, 79, 114, 0.1);;
     line-height: 40px;
 }
 
@@ -757,18 +773,6 @@ h2 {
 
 
 
-footer .CopyRights a {
-    color: #5a5a5a;
-    text-decoration: none;
-    transition: all 0.5s;
-}
 
-footer .CopyRights a:hover {
-    color: #DE5979;
-}
-
-footer ul {
-    padding-left: 0;
-}
 
 
