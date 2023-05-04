@@ -16,7 +16,7 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <!-- fontawesome -->
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -25,8 +25,17 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- google font: Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- css  -->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./../css/home.css" />
   </head>
 
   <body>
@@ -94,36 +103,269 @@
             <a href="" class="search-search">
               <span class="fa fa-search"></span>
             </a>
-            <button type="button" class="nav_btn px-4 py-3 rounded-1 mx-2">
+
+            <a href="#" class="nav_btn btn-focus px-4 py-3 rounded-1 mx-2">
               SCHEDULE A DEMO
-            </button>
+            </a>
           </div>
         </div>
       </nav>
     </header>
-    <main>
-      <section>
+    <!-- BANNER -->
+    <section class="banner">
+      <div
+        class="content d-flex justify-content-center align-items-center position-relative"
+      >
         <div class="container">
-          <div class="row align-items-center">
-            <div class="">
+          <div class="row">
+            <div
+              class="banner__left col-6 d-flex justify-content-center align-items-start flex-column text-left"
+            >
               <h3>We Execute Our Ideas From Start to Finish</h3>
               <p>
-                Building a beautiful interactive business for startups and
-                innovative companies.
+                Building a beautiful interactive business for <br />
+                startups and innovative companies.
               </p>
-              <button type="button" class="nav_btn px-4 py-3 rounded-1 mx-2">
-                GET STARTED
-              </button>
+              <a href="#" class="nav_btn btn-focus rounded-1"> GET STARTED </a>
+            </div>
+            <div class="banner__right col-6">
+              <img src="./../img/main.png" alt="main.png" />
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- TOOLS -->
+    <section class="tools">
+      <div class="container">
+        <div class="tools__title">
+          <p class="subtitle">WHY CHOOSE US</p>
+          <h1>
+            Tools for business startup to <br />
+            professional
+          </h1>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis <br />
+            dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet
+            mattis quam.
+          </p>
+        </div>
+        <div class="row my-5">
+          <!-- Item 1 -->
+          <div class="col-4">
+            <div class="tools__item">
+              <a href="#">
+                <img src="./../img/s1.png" alt="s1.png" />
+                <h3>Interactive</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tempora rerum perspiciatis?
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="col-4">
+            <div class="tools__item">
+              <a href="#">
+                <img src="./../img/s2.png" alt="s2.png" />
+                <h3>Business</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tempora rerum perspiciatis?
+                </p>
+              </a>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="col-4">
+            <div class="tools__item">
+              <a href="#">
+                <img src="./../img/s3.png" alt="s3.png" />
+                <h3>Inspiration</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laudantium tempora rerum perspiciatis?
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT US -->
+    <section class="aboutUs">
+      <div class="container">
+        <div class="aboutUs__content d-flex">
+          <div class="content__left col-6">
+            <p class="subtitle">ABOUT OUR COMPANY</p>
+            <h1>
+              The Best Choice For Your <br />
+              Successful Business!
+            </h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est
+              repellendus illum harum quam nihil totam reprehenderit! Ut sed
+              eveniet quos! Asperiores officia, repudiandae similique
+              reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.
+            </p>
+            <a href="#url" class="nav_btn btn-focus rounded-1"> READ MORE </a>
+          </div>
+          <div class="content__right col-6">
+            <img src="./../img/about.jpg" alt="about.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NUMBER -->
+    <section class="number">
+      <div class="container">
+        <div class="row">
+          <!-- item 1 -->
+          <div class="col-4">
+            <div class="number__item">
+              <p>Happy Customers</p>
+              <h1 class="counter">10458</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="col-4 px-3">
+            <div class="number__item">
+              <p>Winning Awards</p>
+              <h1 class="counter">890</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="col-4">
+            <div class="number__item">
+              <p>Completed Projects</p>
+              <h1 class="counter">5345</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                atque sed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- COMMIT -->
+    <section class="commit">
+      <div class="container">
+        <h1>
+          We are true to ourselves, and commit <br> to always perform at our best.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, <br> doloribus atque. Corrupti exercitationem voluptatem
+          ipsum iste <br> consequuntur et vitae voluptas temporibus? Maxime dolores
+          amet <br> voluptatum illo consequatur placeat fugit ducimus.
+        </p>
+        <a href="#url" class="nav_btn rounded-1"> READ MORE </a>
+      </div>
+      </div>
+    </section>
+    <!-- FAQs -->
+    <section class="faqs py-5">
+      <div class="container">
+        <div class="faqs__title text-center mx-auto">
+          <p class="subtitle">QUESTIONS AND ANSWERS</p>
+          <h1>General FAQs</h1>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis <br> dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+        </div>
+        <div class="faqs__content row">
+          <div class="content__left col-6">
+            <img src="./../img/women.jpg" alt="women.jpg">
+          </div>
+          <div class="content__right col-6">
+            <div class="accordion">
+              <!-- item 1 -->
+              <div class="accordion__item active">
+                <div class="accordion__header">
+                  <h2>There are many passages but the majority?</h2>
+                  <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="accordion__item active">
+                <div class="accordion__header">
+                  <h2>There are many passages but the majority?</h2>
+                  <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="accordion__item active">
+                <div class="accordion__header">
+                  <h2>There are many passages but the majority?</h2>
+                  <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </div>
+              </div>
+              <!-- item 4 -->
+              <div class="accordion__item active">
+                <div class="accordion__header">
+                  <h2>There are many passages but the majority?</h2>
+                  <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </div>
+              </div>
+              <!-- item 5 -->
+              <div class="accordion__item active">
+                <div class="accordion__header">
+                  <h2>There are many passages but the majority?</h2>
+                  <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </div>
+              </div>
+              <!-- item 6 -->
+              <div class="accordion__item active">
+                <div class="accordion__header">
+                  <h2>There are many passages but the majority?</h2>
+                  <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="accordion__body">
+                  <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur quae quasi fuga, ad corrupti libero omnis sapiente non assumenda, incidunt officiis eaque iste minima autem.</p>
+                </div>
+              </div>
+            </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECTS -->
+    <section class="projects">
+      <div class="container">
+        <div class="projects__title text-center mx-auto">
+          <p class="subtitle">FEATURED CASES</p>
+          <h1>Completed Projects</h1>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+        </div>
+        <div class="projects__content mx-auto"></div>
+      </div>
+    </section>
 
-        <img
-          src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/main.png"
-          alt="main img"
-        />
-      </section>
-    </main>
     <footer>
       <!-- footer -->
       <section class="footer">
@@ -291,7 +533,6 @@
           </div>
         </div>
       </section>
-      <!-- //footer -->
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -305,5 +546,35 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- COUNT UP JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./../js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 3000,
+        delay: 10,
+      });
+    </script>
+    <!-- ACCORDION -->
+    <script>
+      $(document).ready(function() {
+        $('.accordion__header').click(function() {
+          $(this).parent().toggleClass('active');
+          $(this).parent().children('.accordion__body').slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>
