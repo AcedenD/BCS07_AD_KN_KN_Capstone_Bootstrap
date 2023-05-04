@@ -37,6 +37,7 @@ html body {
   #switchButton .fa-moon {
     display: block;
     color: #191c1d;
+
   }
   
   /* Dark Theme*/
@@ -56,6 +57,7 @@ html body {
   .dark #switchButton .fa-sun {
     display: block;
     color: white;
+    background-color: transparent;
   }
   
   .dark #switchButton .fa-moon {
@@ -372,7 +374,11 @@ header .navbar .collapse .nav-item .active{
     color: #DE5979!important;
 }
 
-header .navbar .collapse .dropdown-toggle::after {
+header .navbar .collapse a::after {
+    display: none;
+}
+
+header .navbar .show a::after {
     display: none;
 }
 
@@ -380,8 +386,30 @@ header .navbar .collapse .dropdown-item.active {
     background-color: transparent;
 }
 
+header .navbar .navbar-toggler-icon {
+    background-image: none;
+}
+
+
+
 header .navbar .collapse .dropdown-item:hover {
     background-color: transparent;
+}
+
+button.navbar-toggler.collapsed .icon-expand {
+    display: block;
+}
+
+button.navbar-toggler .icon-expand {
+    display: none;
+}
+
+button.navbar-toggler.collapsed .icon-close {
+    display: none;
+}
+
+button.navbar-toggler .icon-expand {
+    display: block;
 }
 
 
@@ -722,6 +750,8 @@ h2 {
 
     .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover{
         border: 0px solid transparent;
+        outline: none;
+        box-shadow: none;
     }
 
     .navbar-nav{
@@ -875,6 +905,7 @@ h2 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Make the overlay semi-transparent */
     display: none; /* Hide the overlay by default */
+    z-index: 999; /* Position the overlay above the page content (and below the navbar) */
   }
   
   .overlay-content {
