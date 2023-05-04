@@ -37,6 +37,7 @@ html body {
   #switchButton .fa-moon {
     display: block;
     color: #191c1d;
+
   }
   
   /* Dark Theme*/
@@ -56,6 +57,7 @@ html body {
   .dark #switchButton .fa-sun {
     display: block;
     color: white;
+    background-color: transparent;
   }
   
   .dark #switchButton .fa-moon {
@@ -96,11 +98,19 @@ html body {
         color: white ;
     }
 
-    .dark .services {
+    .dark .services, .dark .getInTouch .contact-info {
         background-color: #121617;
     }
 
-    .dark .services h2, .dark  h3, .dark .services .services_right h4 a, .dark .services h5, .dark .services h6 , .dark .fServices li{
+    /* .dark .services h2, .dark .services h3, .dark .services .services_right h4 a, .dark .services h5, .dark .services h6 , .dark .fServices li{
+        color: white;
+    }
+
+    .dark .product h2, .dark .product h3, .dark .product h4, .dark .product h5, .dark .product p {
+        color: white;
+    } */
+
+    .dark  h2, .dark  h3, .dark .services .services_right h4 a, .dark h5, .dark .services h6 , .dark .fServices li{
         color: white;
     }
 
@@ -108,15 +118,12 @@ html body {
         color: #B7B7B7;
     }
 
-    .dark .product {
+    .dark .product , .dark .getInTouch {
         background-color: #1A1C1D;
     }
 
-    .dark .product h2, .dark .product h3, .dark .product h4, .dark .product h5, .dark .product p {
-        color: white;
-    }
 
-    .dark .product p {
+    .dark .product p, .dark .getInTouch p, .dark .contactUs p, .dark .getInTouch .contact-info a, .dark .getInTouch .contact-info p {
         color: #B7B7B7;
     }
 
@@ -132,7 +139,7 @@ html body {
         background-color: #1A1C1D;
     }
 
-    .dark .fServices h2, .dark .fServices h3, .dark .fServices h4, .dark .fServices h5, .dark .fServices p {
+    .dark .fServices h2, .dark .fServices h3, .dark .fServices h4, .dark .fServices h5, .dark .fServices p, .dark .getInTouch .contact-info h4  {
         color: white;
     }
 
@@ -144,8 +151,19 @@ html body {
         border: 1px solid #191c1d;
     }
 
+    .dark .contactUs, .dark .contactUs .contact-form {
+        background-color: #121617;
+    }
+
+    .dark .contactUs .contact-form .main-form input, .dark .contactUs .contact-form .main-form textarea {
+        background-color: #1A1C1D !important;
+        border: 1px solid #333;
+    }
 
 
+    .dark .contactMap iframe {
+        filter: grayscale(100%);
+    }
     
 
   
@@ -219,6 +237,11 @@ header .navbar .active{
     color: #DE5979;
 }
 
+header .navbar {
+    position: relative;
+    align-items: center;
+}
+
 
 header .navbar .navbar-brand:hover {
     color: #DE5979!important;
@@ -227,6 +250,14 @@ header .navbar .navbar-brand:hover {
 
 
 header .navbar-brand {
+    color: #DE5979;
+    font-weight: 500;
+    align-items: center;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+header .navbar-brand:focus {
     color: #DE5979;
     font-weight: 500;
     align-items: center;
@@ -319,10 +350,14 @@ header .navbar .collapse .nav-item .nav-link::before{
     transition: all 0.5s !important;
 }
 
+button.navbar-toggler.collapsed .icon-expand {
+    display: block;
+}
+
 
 header .navbar .collapse .nav-item .nav-link:hover::before{
     visibility: visible;
-    width: 35%;
+    width: 35px;
 }
 
 header .navbar .collapse .nav-item a{
@@ -339,7 +374,11 @@ header .navbar .collapse .nav-item .active{
     color: #DE5979!important;
 }
 
-header .navbar .collapse .dropdown-toggle::after {
+header .navbar .collapse a::after {
+    display: none;
+}
+
+header .navbar .show a::after {
     display: none;
 }
 
@@ -347,8 +386,30 @@ header .navbar .collapse .dropdown-item.active {
     background-color: transparent;
 }
 
+header .navbar .navbar-toggler-icon {
+    background-image: none;
+}
+
+
+
 header .navbar .collapse .dropdown-item:hover {
     background-color: transparent;
+}
+
+button.navbar-toggler.collapsed .icon-expand {
+    display: block;
+}
+
+button.navbar-toggler .icon-expand {
+    display: none;
+}
+
+button.navbar-toggler.collapsed .icon-close {
+    display: none;
+}
+
+button.navbar-toggler .icon-expand {
+    display: block;
 }
 
 
@@ -401,6 +462,24 @@ header .navbar a.nav_btn {
     text-decoration: none;
 
 }
+
+header .navbar a.search-search {
+    text-decoration: none;
+}
+
+header .navbar-toggler-icon{
+    width: 36px;
+    height: 36px;
+    background-color: #DE5979;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 34px;
+    content: "";
+}
+
+
+
 
 /* Breadcrumb css */
 section#breadcrumb{
@@ -651,6 +730,51 @@ h2 {
         width: 300px;
         margin: 20px auto 40px;
     }
+
+    .mode-container {
+        position: absolute;
+        top: 20px;
+        right: 100px;
+    }
+
+    .navbar-toggler-icon{
+        position: absolute;
+        top: 12px;
+        right: 5%;
+        background-color: #d62f58;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 800;
+        line-height: 34px;
+    }
+
+    .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:hover{
+        border: 0px solid transparent;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .navbar-nav{
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .search-right {
+        text-align: center;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+    }
+
+    .top-quote {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
 }
 
 
@@ -705,7 +829,7 @@ h2 {
 }
 
 .getInTouch .contact-info:hover{
-    transform: var(--transformY);
+    transform: translateY(-10px);
 }
 
 .getInTouch .contact-info span{
@@ -716,7 +840,7 @@ h2 {
     color: #DE5979;
     margin-bottom: 10px;
     padding: 10px;
-    background-color: #FCEDF1;
+    background-color: rgba(220, 79, 114, 0.1);;
     line-height: 40px;
 }
 
@@ -748,27 +872,117 @@ h2 {
     margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-footer .CopyRights a {
-    color: #5a5a5a;
-    text-decoration: none;
-    transition: all 0.5s;
+.back_to_top{
+    width: 50px;
+    height: 45px;
+    background-color: rgba(220, 79, 114, 0.6);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 5px;
 }
 
-footer .CopyRights a:hover {
-    color: #DE5979;
+.back_to_top a{
+    color: white;
 }
 
-footer ul {
-    padding-left: 0;
-}
+
+/* Footer css */
+
+
+
+
+/* overlay css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Make the overlay semi-transparent */
+    display: none; /* Hide the overlay by default */
+    z-index: 999; /* Position the overlay above the page content (and below the navbar) */
+  }
+  
+  .overlay-content {
+    position: absolute;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .overlay-content input {
+    /* width: 70%; */
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid white;
+    border-radius: 5px 0px 0px 5px;
+    /* box-sizing: border-box; */
+  }
+
+  .overlay-content input:focus {
+    outline: none;
+    /* border: 1px solid #DE5979; */
+  }
+
+  .dark .overlay-content input {
+    background-color: #1A1C1D;
+    border: 1px solid #1A1C1D;
+  }
+
+  .dark .overlay-content input[type="text"] {
+    color: #5A5A5A;
+  }
+  
+
+    .overlay-content button {
+        width: 30%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #DE5979;
+        border-radius: 0px 5px 5px 0px;
+        /* box-sizing: border-box; */
+        background-color: #DE5979;
+        color: white;
+    }
+
+    .overlay-content button:hover {
+        filter: grayscale(20%);
+    }
+
+    .overlay-content i {
+        position: absolute;
+        top: 30%;
+        right: 2%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+  
+  .fas.fa-info-circle {
+    font-size: 24px;
+    color: blue;
+  }
+  
+
+
+
+
+
+
+
+
+
+
 
 
