@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
@@ -12,7 +15,7 @@ a {
 .banner .content {
   background: linear-gradient(
       to right,
-      var(--bg-color),
+      #fff,
       rgba(255, 255, 255, 0.92)
     ),
     url(./../img/banner.jpg);
@@ -356,4 +359,180 @@ a {
   .accordion__body
   p {
   color: #5a5a5a;
+}
+/* TESTIMONIALS */
+.testimonials {
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.77)),
+    url(./../img/b3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.testimonials .testimonials__title .subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #dc4f72;
+  margin-bottom: 5px;
+}
+.testimonials .testimonials__title h1 {
+  color: #2c3038;
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 700;
+}
+.testimonials .testimonials__title p:last-of-type {
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 22.5px;
+  font-weight: 400;
+}
+.testimonials .testimonials__content .content__item .item {
+  /* max-width: 95%; */
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.testimonials .testimonials__content .content__item .item .item__left {
+  width: 30%;
+}
+.testimonials .testimonials__content .content__item .item .item__left {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  background: #f3f6f9;
+  border-radius: 50%;
+  border: 3px solid #dc4f72;
+}
+.testimonials .testimonials__content .content__item .item .item__left img {
+  width: 100%;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.testimonials .testimonials__content .content__item .item .item__right {
+  width: 70%;
+  position: relative;
+  text-align: left;
+}
+.testimonials .testimonials__content .content__item .item .item__right span {
+  font-size: 30px;
+  color: #2c3038;
+  opacity: 0.2;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  right: 0;
+}
+.testimonials .testimonials__content .content__item .item .item__right p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #2c3038;
+}
+.testimonials
+  .testimonials__content
+  .content__item
+  .item
+  .item__right
+  .item__info
+  h4 {
+  color: #dc4f72;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 0;
+}
+.testimonials
+  .testimonials__content
+  .content__item
+  .item
+  .item__right
+  .item__info
+  p {
+  color: #5a5a5a;
+  font-size: 13px;
+  line-height: 26px;
+}
+/* BOOK A DEMO */
+.demo .demo__title h1 {
+  color: #2c3038;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.demo .demo__title p {
+  color: #5a5a5a;
+  line-height: 22.5px;
+  margin: 16px 0;
+}
+.demo .demo__button .btn1 {
+  background-color: #fff;
+  border: 1px solid #dc4f72;
+  border-radius: 4px;
+  color: #dc4f72;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 52px;
+  display: inline-block;
+  margin-right: 8px;
+  padding: 0 30px;
+  transition: all 0.5s;
+}
+.demo .demo__button .btn1:hover {
+  background-color: #dc4f72;
+  color: #fff;
+}
+.demo .demo__button .btn1:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
+}
+.demo .demo__button .btn2 {
+  background-color: #dc4f72;
+  border: 1px solid #dc4f72;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 52px;
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 30px;
+  transition: all 0.5s;
+}
+.demo .demo__button .btn2:hover {
+  background-color: #d62f58;
+  border-color: #cf2952;
+}
+.demo .demo__button .btn2:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
+}
+/* BACKTOTOP */
+.backToTop {
+  width: 50px;
+  height: 50px;
+  background: #e6839c;
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: white;
+  transition: all 0.2s;
+  box-shadow: -4px 4px 24px -10px #e6839c;
+  visibility: hidden;
+  opacity: 0;
+}
+.backToTop:hover {
+  background: #dc4f72;
+  color: #fff;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }
