@@ -1,6 +1,7 @@
 console.log('Hello World!');
 
 document.getElementById("switchButton").onclick = function () {
+    console.log("theme switch clicked");
 
     document.getElementById("myBody").classList.toggle("dark");
 };

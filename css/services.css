@@ -37,7 +37,7 @@ html body {
   #switchButton .fa-moon {
     display: block;
     color: #191c1d;
-
+    border: transparent;
   }
   
   /* Dark Theme*/
