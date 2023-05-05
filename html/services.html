@@ -33,12 +33,13 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
             <div class="container">
-                <a class="navbar-brand d-flex" href="#">
+                <a class="navbar-brand d-flex" href="./index.html">
                     <i class="fa-regular fa-handshake mx-2"></i> Masterwork</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-black">
@@ -76,26 +77,41 @@
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
                         </li>
                     </ul>
-
-                    <a href="#search" class="search-search">
-                        <span class="fa fa-search
-                            "></span>
-                    </a>
-
-
-
-                    <a href="#" class="nav_btn px-4 py-3 rounded-1 mx-2">
-                        SCHEDULE A DEMO
-                    </a>
-
-                    <div class="mode-container" id="switchButton">
-                        <i class="far fa-moon"></i>
-                        <i class="far fa-sun"></i>
+                    <div class="search-right">
+                        <a href="#search" class="search-search">
+                            <span class="fa fa-search
+                                "></span>
+                        </a>
+                        <div class="overlay">
+                            <div class="overlay-content d-flex align-items-center ">
+                                <form class="d-flex gap-0" action="">
+                                    <input type="text" placeholder="Enter Keyword">
+                                    <button type="submit">Search</button>
+                                    <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
                     </div>
+
+
+
+                    <div class="top-quote">
+                        <a href="#" class="nav_btn px-4 py-3 rounded-1 mx-2">
+                            SCHEDULE A DEMO
+                        </a>
+                    </div>
+
+
+
+
+
                     <!-- <button class="btn" id="switchButton" title="Click to switch theme">
                         <i class="far fa-moon"></i>
                         <i class="far fa-sun"></i>
                     </button> -->
+                </div>
+                <div class="mode-container" id="switchButton">
+                    <i class="far fa-moon"></i>
+                    <i class="far fa-sun"></i>
                 </div>
             </div>
         </nav>
@@ -112,6 +128,7 @@
                 </nav>
             </div>
         </section>
+        <!-- SERVICES -->
         <section class="services my-5">
             <div class="container">
                 <h2 class="text-center mb-5">Our Services</h2>
@@ -183,6 +200,7 @@
 
             </div>
         </section>
+        <!-- PRODUCTS -->
         <section class="product my-5 py-5">
             <div class="container ">
                 <div class="header-section text-center pb-4">
@@ -352,129 +370,15 @@
         </section>
 
     </main>
+
     <footer>
         <!-- place footer here -->
-        <!-- <section class="footer">
-            <div class="w3l-footer-16-main py-5">
-                <div class="container MasterFooter">
-                    <div class="row">
-                        <div class="col-lg-6 column">
-                            <div class="row">
-                                <div class="col-md-4 column">
-                                    <div id="meta-2" class="widget_meta">
-                                        <h3 class="">Meta</h3>
-                                        <ul>
-                                            <li>
-                                                <a href="https://wp.w3layouts.com/masterwork/wp-login.php">Log in</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://wp.w3layouts.com/masterwork/feed/">Entries feed</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://wp.w3layouts.com/masterwork/comments/feed/">Comments
-                                                    feed</a>
-                                            </li>
 
-                                            <li>
-                                                <a href="https://wordpress.org/">WordPress.org</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 column mt-md-0 mt-4">
-                                    <div id="categories-4" class="widget_categories">
-                                        <h3 class="">Categories</h3>
-                                        <ul>
-                                            <li class="cat-item cat-item-2">
-                                                <a
-                                                    href="https://wp.w3layouts.com/masterwork/category/business/">Business</a>
-                                            </li>
-                                            <li class="cat-item cat-item-3">
-                                                <a
-                                                    href="https://wp.w3layouts.com/masterwork/category/design/">Design</a>
-                                            </li>
-                                            <li class="cat-item cat-item-4">
-                                                <a
-                                                    href="https://wp.w3layouts.com/masterwork/category/industry/">Industry</a>
-                                            </li>
-                                            <li class="cat-item cat-item-5">
-                                                <a
-                                                    href="https://wp.w3layouts.com/masterwork/category/programming/">Programming</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 column mt-md-0 mt-4">
-                                    <div id="archives-4" class="widget_archive">
-                                        <h3 class="">Archives</h3>
-                                        <ul>
-                                            <li>
-                                                <a href="https://wp.w3layouts.com/masterwork/2021/03/">March 2021</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5">
-                            <h3>Newsletter</h3>
-                            <div class="end-column">
-                                <h4>Get latest updates and offers.</h4>
-                                <form action="" class="subscribe" method="post">
-                                    <input type="email" name="email" placeholder="Email Address" required="" />
-                                    <button type="submit">Go</button>
-                                </form>
-                                <p>
-                                    Sign up for our latest news &amp; articles. We won’t give
-                                    you spam mails.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
-                        <div class="columns text-lg-left text-center">
-                            <p class="CopyRights">
-                                © 2023 Masterwork. All Rights Reserved | WordPress Theme by
-                                <a href="https://w3layouts.com/">W3Layouts. </a>
-                            </p>
-                        </div>
-
-                        <div class="columns-2 mt-lg-0 mt-3 FooterSocial">
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.facebook.com/w3layouts/">
-                                        <span class="fa-brands fa-facebook" aria-hidden="true"></span></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://in.linkedin.com/company/w3layouts">
-                                        <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://twitter.com/W3layouts">
-                                        <span class="fa-brands fa-twitter" aria-hidden="true"></span></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://google.com/W3layouts">
-                                        <span class="fa-brands fa-google-plus-g" aria-hidden="true"></span></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://github.com/W3layouts">
-                                        <span class="fa-brands fa-github" aria-hidden="true"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <!-- footer end -->
     </footer>
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -484,7 +388,12 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
 
-    <!-- Template JavaScript -->
+
+    <!-- BACKTOTOP -->
+    <script src="./../js/Backtotop/util.js"></script>
+    <script src="./../js/Backtotop/main.js"></script>
+
+    <!-- Color changing JavaScript -->
     <script src="../js/index.js"></script>
 </body>
 

@@ -15,200 +15,395 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- OWLCAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- css  -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link rel="stylesheet" href="../css/services.css" />
+    <link rel="stylesheet" href="../css/home.css" />
 </head>
 
-<body>
+<body id="myBody">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
             <div class="container">
-                <a class="navbar-brand d-flex" href="#">
+                <a class="navbar-brand d-flex" href="./index.html">
                     <i class="fa-regular fa-handshake mx-2"></i> Masterwork</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-black">
                         <li class="nav-item">
-                            <a class="nav-link " href="./index.html">Home</a>
+                            <a class="nav-link" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./about.html">About</a>
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./services.html">Services</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <li class="nav-item">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
 
                                 Pages
-                                <i class="fa fa-angle-down"></i>
+                                <i class="fa fa-angle-down active"></i>
                             </a>
-                            <ul class="dropdown-menu">
+                            <div class="sub-menu dropdown-menu">
+                                <a class="dropdown-item" href="./blogs.html">Blog Posts</a>
+                                <a class="dropdown-item" href="./landing.html">Landing page</a>
+                                <a class="dropdown-item" href="./error.html">404 page</a>
+                            </div>
+
+
+                            <!-- <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./blogs.html">Blog Posts</a></li>
-                                <li><a class="dropdown-item active" href="./landing.html">Landing page</a></li>
+                                <li><a class="dropdown-item" href="./landing.html">Landing page</a></li>
                                 <li>
                                 </li>
                                 <li><a class="dropdown-item" href="./error.html">404 page</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
                         </li>
                     </ul>
+                    <div class="search-right">
+                        <a href="#search" class="search-search">
+                            <span class="fa fa-search
+                                "></span>
+                        </a>
+                        <div class="overlay">
+                            <div class="overlay-content d-flex align-items-center ">
+                                <form class="d-flex gap-0" action="">
+                                    <input type="text" placeholder="Enter Keyword">
+                                    <button type="submit">Search</button>
+                                    <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
 
-                    <a href="" class="search-search">
-                        <span class="fa fa-search
-                            "></span>
-                    </a>
-                    <button type="button" class="nav_btn px-4 py-3 rounded-1 mx-2">
-                        SCHEDULE A DEMO
-                    </button>
 
+
+                    <div class="top-quote">
+                        <a href="#" class="nav_btn px-4 py-3 rounded-1 mx-2">
+                            SCHEDULE A DEMO
+                        </a>
+                    </div>
+
+
+
+
+
+                    <!-- <button class="btn" id="switchButton" title="Click to switch theme">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button> -->
+                </div>
+                <div class="mode-container" id="switchButton">
+                    <i class="far fa-moon"></i>
+                    <i class="far fa-sun"></i>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section id="breadcrumb">
+        <!-- BANNER -->
+
+        <!-- ABOUT US FROM ABOUT -->
+
+        <!-- ABOUT OUR COMPANY -->
+
+        <!-- SERVICES -->
+        <section class="services my-5">
             <div class="container">
-                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb" class="">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page"> » Landing page </li>
-                    </ol>
-                </nav>
+                <h2 class="text-center mb-5">Our Services</h2>
+                <div class="row justify-content-center align-items-center g-4">
+                    <div class="services_left col-md-12 col-lg-6">
+                        <div class="services_left_title">
+                            <h3>Our Best Services</h3>
+                        </div>
+                        <div class="services_left_content">
+                            <p class="my-4" id="services_left_topP">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi aliquid explicabo
+                                numquam.
+                            </p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque repudiandae eligendi
+                                nisi? Eveniet ea repudiandae laudantium cum? Doloremque est facilis quidem placeat
+                                quibusdam repellat doloribus, id, laboriosam, soluta assumenda vero cumque laborum.
+                                Temporibus, expedita quae!
+                            </p>
+                            <button class="btn-custom mt-lg-5 mt-4">Learn More</button>
+
+                        </div>
+                    </div>
+                    <div class="services_right col-md-12 col-lg-6 mt-lg-0 mt-5">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="" class="icon">
+                                    <img src="../img/service-icon1.png" alt="">
+                                </a>
+                                <h4>
+                                    <a href="">Concept & Strategy </a>
+                                </h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, placeat.
+                                </p>
+                            </div>
+                            <div class="col-6">
+                                <a href="" class="icon">
+                                    <img src="../img/service-icon2.png" alt="">
+                                </a>
+                                <h4>
+                                    <a href="">Interactive Business</a>
+                                </h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, placeat.
+                                </p>
+                            </div>
+                            <div class="col-6 mt-5 pt-lg-3">
+                                <a href="" class="icon">
+                                    <img src="../img/service-icon3.png" alt="">
+                                </a>
+                                <h4>
+                                    <a href="">Financial Institution</a>
+                                </h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, placeat.
+                                </p>
+                            </div>
+                            <div class="col-6 mt-5 pt-lg-3">
+                                <a href="" class="icon">
+                                    <img src="../img/service-icon4.png" alt="">
+                                </a>
+                                <h4>
+                                    <a href="">Worldwide Access</a>
+                                </h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, placeat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- PRODUCTS -->
+        <section class="product mt-5 py-5">
+            <div class="container ">
+                <div class="header-section text-center pb-4">
+                    <h6 class="sub-title">The Best Products</h6>
+                    <h2>How we make your strategy
+                        <br> business
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quidem rem tempora nobis adipisci
+                        <br>
+                        illo quis ratione temporibus aliquam cupiditate?
+                    </p>
+                </div>
+                <div class="row product-info mx-lg-0">
+                    <div class="col-lg-4 product-right">
+                        <div class="row mb-lg-5 mb-4">
+                            <div class="col-2">
+                                <div class="product-icon">
+                                    <span>1</span>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4><a href="">Full Security</a></h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit ducimus ab
+                                    numquam quaerat obcaecati.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-lg-5 mb-4">
+                            <div class="col-2">
+                                <div class="product-icon">
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4><a href="">Best Performance</a></h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit ducimus ab
+                                    numquam quaerat obcaecati.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-lg-5 mb-4">
+                            <div class="col-2">
+                                <div class="product-icon">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4><a href="">Concept & Stategy</a></h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit ducimus ab
+                                    numquam quaerat obcaecati.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 product-center">
+                        <img class="img-fluid img-curve" src="../img/service-circle.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 product-right">
+                        <div class="row mb-lg-5 mb-4">
+                            <div class="col-2">
+                                <div class="product-icon">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4><a href="">Worldwide access</a></h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit ducimus ab
+                                    numquam quaerat obcaecati.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-lg-5 mb-4">
+                            <div class="col-2">
+                                <div class="product-icon">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4><a href="">Interactive business</a></h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit ducimus ab
+                                    numquam quaerat obcaecati.</p>
+                            </div>
+                        </div>
+                        <div class="row mb-lg-5 mb-4">
+                            <div class="col-2">
+                                <div class="product-icon">
+                                    <span>6</span>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h4><a href="">Emailing</a></h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit ducimus ab
+                                    numquam quaerat obcaecati.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQs -->
+
+        <!-- NUMBER -->
+
+        <!-- COMMIT -->
+
+        <!-- PROJECTS -->
+
+        <!-- TESTIMONIALS -->
+
+        <!-- CONTACT US -->
+        <section class="contactUs my-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Contact Us</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center">
+                        <img src="../img/contact.jpg" class="contact_img img-curve img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12 position-relative contactPageForm">
+                        <div class="contact-form ">
+                            <div class="header-section mb-4">
+                                <h3>Drop us a Message</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad rerum animi omnis,
+                                    perferendis voluptatum?</p>
+                            </div>
+                            <form>
+                                <div class="main-form">
+                                    <input type="text" class="bg-light" placeholder="Enter your name">
+                                    <input type="text" class="bg-light" placeholder="Enter your mail">
+                                    <input type="text" class="bg-light" placeholder="Subject">
+                                    <textarea class="bg-light" cols="50" placeholder="Enter your message"></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn-custom">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- GET IN TOUCH -->
+        <section class="getInTouch py-5">
+            <div class="container">
+                <div class="header-section text-center">
+                    <h6 class="sub-title">Get in Touch</h6>
+                    <h3 class="title">We're here to help</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem incidunt adipisci porro
+                        <br>
+                        repudiandae laudantium accusantium iure totam vel facilis?
+                    </p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-12 ">
+                        <div class="contact-info">
+                            <div class="icon">
+                                <span class="fa fa-location-arrow"></span>
+                            </div>
+                            <div class="info">
+                                <h4>Our head office address:
+                                </h4>
+                                <p>8th-block road, cross avenue,<br> Lorem dolor sit, New York, USA
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
+                        <div class="contact-info">
+                            <div class="icon">
+                                <span class="fa fa-phone"></span>
+                            </div>
+                            <div class="info">
+                                <h4>Call for help:
+                                </h4>
+                                <p><a href="">+012 345 6789</a> </p>
+                                <p><a href="">+012 345 6789</a> </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
+                        <div class="contact-info">
+                            <div class="icon">
+                                <span class="fa-regular fa-envelope-open"></span>
+                            </div>
+                            <div class="info">
+                                <h4>Mail Us for information:
+                                </h4>
+                                <p><a href="">info@masterwork.com</a> </p>
+                                <p><a href="">masterwork@support.com</a> </p>
+                            </div>
+        </section>
+        <!-- MAP -->
+        <section class="contactMap">
+            <div class="container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001161.424489281!2d-78.01909140705047!3d42.72866436845163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1570786994395!5m2!1sen!2sin"
+                    width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
             </div>
         </section>
 
     </main>
     <footer>
         <!-- footer -->
-        <section class="footer">
-            <div class="w3l-footer-16-main py-5">
-                <div class="container MasterFooter">
-                    <div class="row">
-                        <div class="col-lg-6 column">
-                            <div class="row">
-                                <div class="col-md-4 column">
-                                    <div id="meta-2" class="widget_meta">
-                                        <h3 class="">Meta</h3>
-                                        <ul>
-                                            <li>
-                                                <a href="https://wp.w3layouts.com/masterwork/wp-login.php">Log in</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://wp.w3layouts.com/masterwork/feed/">Entries feed</a>
-                                            </li>
-                                            <li>
-                                                <a href="https://wp.w3layouts.com/masterwork/comments/feed/">Comments
-                                                    feed</a>
-                                            </li>
 
-                                            <li>
-                                                <a href="https://wordpress.org/">WordPress.org</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 column mt-md-0 mt-4">
-                                    <div id="categories-4" class="widget_categories">
-                                        <h3 class="">Categories</h3>
-                                        <ul>
-                                            <li class="cat-item cat-item-2">
-                                                <a
-                                                    href="https://wp.w3layouts.com/masterwork/category/business/">Business</a>
-                                            </li>
-                                            <li class="cat-item cat-item-3">
-                                                <a
-                                                    href="https://wp.w3layouts.com/masterwork/category/design/">Design</a>
-                                            </li>
-                                            <li class="cat-item cat-item-4">
-                                                <a
-                                                    href="https://wp.w3layouts.com/masterwork/category/industry/">Industry</a>
-                                            </li>
-                                            <li class="cat-item cat-item-5">
-                                                <a
-                                                    href="https://wp.w3layouts.com/masterwork/category/programming/">Programming</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 column mt-md-0 mt-4">
-                                    <div id="archives-4" class="widget_archive">
-                                        <h3 class="">Archives</h3>
-                                        <ul>
-                                            <li>
-                                                <a href="https://wp.w3layouts.com/masterwork/2021/03/">March 2021</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5">
-                            <h3>Newsletter</h3>
-                            <div class="end-column">
-                                <h4>Get latest updates and offers.</h4>
-                                <form action="" class="subscribe" method="post">
-                                    <input type="email" name="email" placeholder="Email Address" required="" />
-                                    <button type="submit">Go</button>
-                                </form>
-                                <p>
-                                    Sign up for our latest news &amp; articles. We won’t give
-                                    you spam mails.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
-                        <div class="columns text-lg-left text-center">
-                            <p class="CopyRights">
-                                © 2023 Masterwork. All Rights Reserved | WordPress Theme by
-                                <a href="https://w3layouts.com/">W3Layouts. </a>
-                            </p>
-                        </div>
-
-                        <div class="columns-2 mt-lg-0 mt-3 FooterSocial">
-                            <ul class="social">
-                                <li>
-                                    <a href="https://www.facebook.com/w3layouts/">
-                                        <span class="fa-brands fa-facebook" aria-hidden="true"></span></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://in.linkedin.com/company/w3layouts">
-                                        <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://twitter.com/W3layouts">
-                                        <span class="fa-brands fa-twitter" aria-hidden="true"></span></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://google.com/W3layouts">
-                                        <span class="fa-brands fa-google-plus-g" aria-hidden="true"></span></a>
-                                </li>
-
-                                <li>
-                                    <a href="https://github.com/W3layouts">
-                                        <span class="fa-brands fa-github" aria-hidden="true"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- //footer -->
     </footer>
+    <!-- BACKTOTOP -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -217,6 +412,74 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
+
+    <!-- COUNT UP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <script>
+        $(".counter").countUp({
+            time: 3000,
+            delay: 10,
+        });
+    </script>
+    <!-- ACCORDION -->
+    <script>
+        $(document).ready(function () {
+            $('.accordion__header').click(function () {
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion__body').slideToggle();
+            });
+        });
+    </script>
+
+    <!-- OWLCAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-two').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    480: {
+                        items: 1,
+                        nav: false
+                    },
+                    667: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 2,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- BACKTOTOP -->
+    <script src="./../js/Backtotop/util.js"></script>
+    <script src="./../js/Backtotop/main.js"></script>
+
+    <!-- Color changing JavaScript -->
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
