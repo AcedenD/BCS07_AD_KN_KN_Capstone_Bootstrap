@@ -233,9 +233,15 @@ header{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header .navbar .active{
+header .navbar .active  {
     color: #DE5979;
 }
+
+header .navbar .collapse .navbar-nav .nav-link i.active {
+    color: #DE5979;
+}
+
+
 
 header .navbar {
     position: relative;
