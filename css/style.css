@@ -458,17 +458,6 @@ img.img-curve:hover {
 .dark .footer .subscribe input[type="email"] {
   background-color: #191c1d;
 }
-.w3l-footer .subscribe input[type="email"] {
-  background: var(--light-bg-color);
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  outline: none;
-  width: 78%;
-  color: var(--title-color);
-  font-weight: 600;
-  border-radius: var(--card-curve);
-}
 .footer .column ul {
   padding: 0px;
 }
