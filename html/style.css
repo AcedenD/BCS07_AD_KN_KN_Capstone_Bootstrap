@@ -68,7 +68,7 @@
 .hero img {
     border-radius: 5px;
 }
-img.img-curve:hover {
+.hero_img:hover {
     transform: var(--transformY);
     transition: 0.3s ease-in-out;
 }
@@ -116,7 +116,7 @@ img.img-curve:hover {
     margin-right: auto;
     margin-top: 5px;
 }
-.bott-img {
+.card_img {
     width: 100%;
     height: 250px;
     margin: 0px 0;
@@ -124,7 +124,7 @@ img.img-curve:hover {
     transition: all 0.3s ease;
     padding: 0 30px;
 }
-.bott-img .icon-holder {
+.card_img .card_icon {
     position: relative;
     top: 60px;
     display: inline-block;
@@ -138,12 +138,12 @@ img.img-curve:hover {
     font-size: 26px;
     background-color: var(--primary);
 }
-.elite-services1, .elite-services2, .elite-services3, .elite-services4 {
+.features_card1, .features_card2,.features_card3,.features_card4{
     background: var(--bg-color);
     border-radius: var(--card-curve);
     box-shadow: var(--card-box-shadow);
 }
-.bott-img .mission {
+.card_img .mission {
     position: relative;
     top: 10px;
     transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -152,7 +152,7 @@ img.img-curve:hover {
     font-weight: 700;
     color: var(--title-color);
 }
-.bott-img .description {
+.card_img .description {
     margin: -6em auto 0;
     opacity: 0;
     transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -165,17 +165,17 @@ img.img-curve:hover {
     color: var(--primary);
     text-decoration: none;
 }
-.bott-img:hover {
+.card_img:hover {
     padding: 0 30px;
 }
-.bott-img:hover .icon-holder {
+.card_img:hover .card_icon {
     top: -40px;
     background: var(--primary);
 }
-.bott-img:hover .mission {
+.card_img:hover .mission {
     top: -80px;
 }
-.bott-img:hover .description {
+.card_img:hover .description {
     opacity: 1;
     transform: scale(1);
     font-size: 14px;
@@ -187,15 +187,13 @@ img.img-curve:hover {
     margin: 40px auto;
     position: relative;
 }
-.mfp-hide {
-    display: none !important;
-}
+
 .watch .play-view {
     left: 0;
     right: 0;
     top: calc(50% - 40px);
 }
-.watch span.video-play-icon {
+.watch .video-play-icon {
     background: var(--bg-color);
     display: inline-block;
     width: 55px;
@@ -228,21 +226,21 @@ img.img-curve:hover {
 .myteam .team-info {
     transition: 0.3s ease-in-out;
 }
-.myteam .img-circle {
+.myteam .team_img {
     width: 100%;
     height: 250px;
     display: inline-block;
     overflow: hidden;
     background: #f3f6f9;
 }
-.myteam .img-circle a {
+.myteam .team_img a {
     display: block;
 }
 .myteam .column a img {
     display: block;
     border-radius: 6px 6px 0 0;
 }
-.myteam .column-btm {
+.myteam .team_content {
     padding: 16px;
     background: var(--bg-color);
     border-radius: 0 0 6px 6px;
@@ -277,7 +275,7 @@ img.img-curve:hover {
 .myteam .social a.twitter span {
     color: white;
 }
-.myteam h3.name-pos a {
+.myteam h3.member_name a {
     font-size: 22px;
     line-height: 26px;
     color: var(--title-color);
@@ -289,7 +287,7 @@ img.img-curve:hover {
     transform: var(--transformY);
     transition: 0.3s ease-in-out;
 }
-.myteam .team-info:hover .name-pos a {
+.myteam .team-info:hover .member_name a {
     color: var(--primary);
     transition: 0.3s ease;
 }
@@ -304,13 +302,13 @@ img.img-curve:hover {
     color: white !important;
 }
 /* footer */
-.footer .w3l-footer-16-main.py-5 {
+.footer {
     background: var(--light-bg-color);
 }
-.footer .below-section, .w3l-footer .para-content-footer {
+.footer .below-section{
     border-top: 1px solid var(--border-color);
 }
-.footer .w3l-footer-16-main h3 {
+.footer  h3 {
     font-size: 20px;
     line-height: 25px;
     color: var(--title-color);
@@ -322,7 +320,7 @@ img.img-curve:hover {
     list-style: none;
     margin: 10px 0;
 }
-.footer .w3l-footer-16-main h3 {
+.footer  h3 {
     font-size: 20px;
     line-height: 25px;
     color: var(--title-color);
@@ -344,7 +342,7 @@ img.img-curve:hover {
     border-radius: var(--card-curve);
     box-shadow: var(--card-box-shadow);
 }
-.footer .w3l-footer-16-main h4 {
+.footer  h4 {
     font-size: 18px;
     line-height: 25px;
     color: var(--title-color);
@@ -356,7 +354,7 @@ img.img-curve:hover {
     margin-bottom: 15px;
     justify-content: space-between;
 }
-.footer .w3l-footer-16-main p {
+.footer  p {
     line-height: 22px;
     color: var(--text-color);
     font-size: 16px;
@@ -372,7 +370,7 @@ img.img-curve:hover {
     font-weight: 600;
     border-radius: var(--card-curve);
 }
-.w3l-footer .subscribe input[type="email"] {
+.subscribe input[type="email"] {
     background: var(--light-bg-color);
     border: none;
     padding: 12px 20px;
