@@ -13,11 +13,7 @@ a {
 }
 
 .banner .content {
-  background: linear-gradient(
-      to right,
-      #fff,
-      rgba(255, 255, 255, 0.92)
-    ),
+  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
     url(./../img/banner.jpg);
   z-index: 1;
   overflow: hidden;
@@ -360,6 +356,88 @@ a {
   p {
   color: #5a5a5a;
 }
+
+/* PROJECTS */
+.products .subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #dc4f72;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.products h3 {
+  color: #2c3038;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.products p {
+  color: #5a5a5a;
+  line-height: 22.5px;
+  margin: 16px 0;
+}
+.products .tabs-list {
+  margin: 0;
+  padding: 0;
+}
+
+.products .tabs-list .tab-item {
+  background-color: #fff;
+  border-bottom: 3px solid #f8f9fa;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  background: #fff !important;
+}
+.products .tabs-list .tab-item.active {
+  margin-bottom: -1px !important;
+  border-bottom: 3px solid #dc4f72 !important;
+  color: #dc4f72 !important;
+}
+.products .tabs-list .tab-item.active {
+  background-color: #fff;
+}
+.products .tabs-container {
+  background-color: #fff;
+  padding: 0;
+}
+.products .tabs-container .products-content.active {
+  display: block;
+  margin: 20px 0;
+  padding: 15px;
+}
+.products .tabs-container .products-content.active h3 {
+  color: #2c3038;
+  margin-bottom: 16px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.products .tabs-container .products-content.active p {
+  color: #5a5a5a;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24.5px;
+}
+.products .tabs-container .products-content.active img {
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+.products .tabs-container .products-content.active img:hover {
+  transform: translateY(-8px);
+  transition: 0.3s ease-in-out;
+}
+.products .tabs-container .products-content {
+  display: none;
+}
+
 /* TESTIMONIALS */
 .testimonials {
   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.77)),
@@ -457,6 +535,20 @@ a {
   color: #5a5a5a;
   font-size: 13px;
   line-height: 26px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #fff;
+  width: 40px;
+  height: 5px;
+  line-height: 16px;
+  border-radius: 0;
+  transition: all 0.5s;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #dc4f72;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #dc4f72;
 }
 /* BOOK A DEMO */
 .demo .demo__title h1 {

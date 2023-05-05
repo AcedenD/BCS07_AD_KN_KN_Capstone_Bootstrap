@@ -344,15 +344,89 @@
     </div>
   </section>
   <!-- PROJECTS -->
-  <section class="projects">
-    <div class="container">
-      <div class="projects__title text-center mx-auto">
-        <p class="subtitle">FEATURED CASES</p>
-        <h1>Completed Projects</h1>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis <br>
-          dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+  <section class="products py-5 mb-4">
+    <div class="container py-lg-3">
+      <div class="text-center mx-auto" style="max-width: 750px;">
+        <h6 class="subtitle">
+          Featured Cases </h6>
+        <h3>
+          Completed Projects </h3>
+        <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
       </div>
-      <div class="projects__content mx-auto"></div>
+      <div class="row mt-5">
+        <div class="col-lg-10 mx-auto">
+          <div class="d-flex flex-column w-100">
+            <ul class="tabs-list">
+              <li class="tab-item active" role="tab" id="tab-1">
+                Project One </li>
+              <li class="tab-item" role="tab" id="tab-2">
+                Project Two </li>
+              <li class="tab-item" role="tab" id="tab-3">
+                Project Three </li>
+            </ul>
+            <div class="tabs-container">
+              <div class="products-content active" id="content-1">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>
+                      Why a visual identity system is more memorable </h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                      praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                      blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                      pariatur. </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                      Know more</a>
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b4.jpg"
+                      class="img-fluid img-curve" alt="project image">
+                  </div>
+                </div>
+              </div>
+              <div class="products-content" id="content-2">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b5.jpg"
+                      class="img-fluid img-curve" alt="project image">
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <h3>
+                      Make website that looks Lorem, ipsum dolor. </h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                      praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                      blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                      pariatur. </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                      Know more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="products-content" id="content-3">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h3>
+                      Why a visual identity system is more memorable </h3>
+                    <p>
+                      Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                      praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                      blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                      pariatur. </p>
+                    <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                      Know more</a>
+                  </div>
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b6.jpg"
+                      class="img-fluid img-curve" alt="project image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- TESTIMONIALS -->
@@ -618,27 +692,6 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- <script>
-     $(document).ready(function () {
-       $(".carousel2").owlCarousel({
-         loop: true, //lặp lại các item
-         margin: 30, //khoảng cách giữa các item
-         nav: false, //hiện mũi tên trái phải
-        //  dots: false,
-        responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 2
-                }
-            }
-       });
-     });
-   </script> -->
   <script>
     $(document).ready(function () {
       $('.owl-two').owlCarousel({
@@ -674,6 +727,8 @@
   <!-- BACKTOTOP -->
   <script src="./../js/Backtotop/util.js"></script>
   <script src="./../js/Backtotop/main.js"></script>
+  <!-- JS SECTION PROJECT -->
+  <script src="./../js/projects.js"></script>
 </body>
 
 </html>
