@@ -1147,3 +1147,7 @@ footer .CopyRights a:hover {
   font-size: 24px;
   color: blue;
 }
+
+.footer ul li a:hover{
+  color: #de5979;
+}
