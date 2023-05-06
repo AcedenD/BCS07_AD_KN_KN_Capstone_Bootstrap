@@ -553,6 +553,9 @@ a {
   p {
   color: #b7b7b7;
 }
+.dark .arrow {
+  color: #fff;
+}
 
 /* PROJECTS */
 .products .subtitle {
@@ -707,6 +710,16 @@ a {
 }
 .dark .accordion-button::after.collapse {
   color: #fff !important;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-button i {
+  margin-left: auto;
+  transition: all 0.3s;
+}
+.accordion-button.collapsed i {
+  transform: rotate(180deg);
 }
 .dark .accordion-collapse {
   background-color: #000;
@@ -1011,6 +1024,12 @@ a {
   .banner .banner__left h3 {
     font-size: 40px;
     line-height: 45px;
+  }
+  header .navbar .collapse .nav-item .dropdown-menu {
+    transform: translateX(-2px) !important;
+  }
+  header .navbar .collapse .nav-item .dropdown-menu:before {
+    left: 48% !important;
   }
 }
 

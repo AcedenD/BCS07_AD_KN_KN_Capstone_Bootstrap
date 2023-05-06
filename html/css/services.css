@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s;
 }
 
 html body {
@@ -909,20 +908,18 @@ h2 {
   background: #191c1d;
 }
 
-
 .footer {
-    background: #f7f9fc;
+  background: #f7f9fc;
 }
-.footer .below-section{
-    border-top: 1px solid var(--border-color);
+.footer .below-section {
+  border-top: 1px solid var(--border-color);
 }
-.footer  h3 {
-    font-size: 20px;
-    line-height: 25px;
-    color: var(--title-color);
-    margin-bottom: 30px;
-    font-weight: 700;
-
+.footer h3 {
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 .dark .footer .w3l-footer-16-main h3 {
   color: #fff;
@@ -934,12 +931,12 @@ h2 {
   margin: 10px 0;
  */
 
-.footer  h3 {
-    font-size: 20px;
-    line-height: 25px;
-    color: var(--title-color);
-    margin-bottom: 30px;
-    font-weight: 700;
+.footer h3 {
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 .column li a {
   color: #656f7b;
@@ -964,13 +961,12 @@ h2 {
   color: #fff;
 }
 
-.footer  h4 {
-    font-size: 18px;
-    line-height: 25px;
-    color: var(--title-color);
-    margin-bottom: 30px;
-    font-weight: 500;
-
+.footer h4 {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 .footer form {
   display: flex;
@@ -989,39 +985,38 @@ h2 {
   padding: 0px;
 }
 
-.footer  p {
-    line-height: 22px;
-    color: var(--text-color);
-    font-size: 16px;
+.footer p {
+  line-height: 22px;
+  color: var(--text-color);
+  font-size: 16px;
 }
 
 .footer li {
-    list-style: none;
-    margin: 10px 0;
+  list-style: none;
+  margin: 10px 0;
 }
 
 .footer .subscribe input[type="email"] {
-    background: #f7f9fc;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    outline: none;
-    width: 78%;
-    color: var(--title-color);
-    font-weight: 600;
-    border-radius: var(--card-curve);
+  background: #f7f9fc;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  width: 78%;
+  color: var(--title-color);
+  font-weight: 600;
+  border-radius: var(--card-curve);
 }
 .subscribe input[type="email"] {
-    background: #f7f9fc;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    outline: none;
-    width: 78%;
-    color: var(--title-color);
-    font-weight: 600;
-    border-radius: var(--card-curve);
-
+  background: #f7f9fc;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  width: 78%;
+  color: var(--title-color);
+  font-weight: 600;
+  border-radius: var(--card-curve);
 }
 .footer .subscribe button {
   text-align: center;
@@ -1149,6 +1144,6 @@ footer .CopyRights a:hover {
   color: blue;
 }
 
-.footer ul li a:hover{
+.footer ul li a:hover {
   color: #de5979;
 }
