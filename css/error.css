@@ -70,12 +70,25 @@
   color: #dc4f72;
 }
 .error .btn__404:hover i {
-    color: #e4748e;
-  }
+  color: #e4748e;
+}
 .error .btn__404 i {
   color: #7b7b7b;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
   padding-right: 10px;
+}
+/* DARK THEME */
+.dark .breadcrumb-item.active {
+  color: #ffffff !important;
+}
+.dark .error .error__content h2 {
+  color: #eeeeee;
+}
+.dark .error .error__content p {
+  color: #b7b7b7;
+}
+.dark .btn__404 {
+  color: #eeeeee;
 }
