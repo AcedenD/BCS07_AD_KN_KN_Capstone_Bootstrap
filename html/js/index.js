@@ -1,10 +1,35 @@
 console.log('Hello World!');
 
-document.getElementById("switchButton").onclick = function () {
+// document.getElementById("switchButton").onclick = 
+
+function  changeTheme() {
     console.log("theme switch clicked");
 
+    var theme;
+
     document.getElementById("myBody").classList.toggle("dark");
+
+    if (document.getElementById("myBody").classList.contains("dark")) {
+        // alert("dark theme");
+        theme = "DARK";
+    }else{
+        // alert("light theme");
+        theme = "LIGHT";
+    }
+
+    // save to local storage
+
+    localStorage.setItem("PageTheme",JSON.stringify(theme));
+    
+
 };
+
+let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
+console.log(GetTheme);
+
+if (GetTheme == "DARK") {
+    document.getElementById("myBody").classList.add("dark");
+}
 
 console.log("testing.js loaded");
 

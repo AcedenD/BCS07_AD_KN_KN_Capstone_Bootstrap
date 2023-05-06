@@ -850,7 +850,7 @@ h2 {
 
 .getInTouch .contact-info p {
   font-size: 18px;
-  color: var(--text-color);
+  color: #5a5a5a;
   /* line-height: 28px; */
   font-weight: 600;
   /* padding: 0; */
@@ -913,12 +913,12 @@ h2 {
     background: #f7f9fc;
 }
 .footer .below-section{
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid #eee;
 }
 .footer  h3 {
     font-size: 20px;
     line-height: 25px;
-    color: var(--title-color);
+    color: #2C3038;
     margin-bottom: 30px;
     font-weight: 700;
 
@@ -936,7 +936,7 @@ h2 {
 .footer  h3 {
     font-size: 20px;
     line-height: 25px;
-    color: var(--title-color);
+    color: #2C3038;
     margin-bottom: 30px;
     font-weight: 700;
 }
@@ -952,7 +952,7 @@ h2 {
 .footer .end-column {
   background-color: white;
   padding: 2em;
-  border-radius: var(--card-curve);
+  border-radius: 6px;
   box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
 }
 .dark .footer .end-column {
@@ -966,7 +966,7 @@ h2 {
 .footer  h4 {
     font-size: 18px;
     line-height: 25px;
-    color: var(--title-color);
+    color: #2C3038;
     margin-bottom: 30px;
     font-weight: 500;
 
@@ -990,7 +990,7 @@ h2 {
 
 .footer  p {
     line-height: 22px;
-    color: var(--text-color);
+    color: #5a5a5a;
     font-size: 16px;
 }
 
@@ -1006,9 +1006,9 @@ h2 {
     font-size: 16px;
     outline: none;
     width: 78%;
-    color: var(--title-color);
+    color: #2C3038;
     font-weight: 600;
-    border-radius: var(--card-curve);
+    border-radius: 6px;
 }
 .subscribe input[type="email"] {
     background: #f7f9fc;
@@ -1017,9 +1017,9 @@ h2 {
     font-size: 16px;
     outline: none;
     width: 78%;
-    color: var(--title-color);
+    color: #2C3038;
     font-weight: 600;
-    border-radius: var(--card-curve);
+    border-radius: 6px;
 
 }
 .footer .subscribe button {
@@ -1033,7 +1033,7 @@ h2 {
   cursor: pointer;
   width: 20%;
   color: #fff;
-  border-radius: var(--card-curve);
+  border-radius: 6px;
 }
 .footer .social {
   display: flex;
@@ -1045,7 +1045,7 @@ h2 {
   margin-right: 5px;
 }
 .footer .social li a {
-  color: var(--title-color);
+  color: #2C3038;
   width: 36px;
   height: 36px;
   line-height: 36px;
