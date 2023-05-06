@@ -905,6 +905,173 @@ h2 {
 
 /* Footer css */
 
+.dark .footer .py-5 {
+  background: #191c1d;
+}
+
+
+.footer {
+    background: #f7f9fc;
+}
+.footer .below-section{
+    border-top: 1px solid var(--border-color);
+}
+.footer  h3 {
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    font-weight: 700;
+
+}
+.dark .footer .w3l-footer-16-main h3 {
+  color: #fff;
+}
+
+/*.column li {
+  display: block;
+  list-style: none;
+  margin: 10px 0;
+ */
+
+.footer  h3 {
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.column li a {
+  color: #656f7b;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.footer .end-column {
+  background-color: white;
+  padding: 2em;
+  border-radius: var(--card-curve);
+  box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+}
+.dark .footer .end-column {
+  background-color: #131617;
+}
+
+.dark .footer .w3l-footer-16-main h4 {
+  color: #fff;
+}
+
+.footer  h4 {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    font-weight: 500;
+
+}
+.footer form {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.dark .footer p {
+  color: #b7b7b7;
+}
+
+.dark .footer .subscribe input[type="email"] {
+  background-color: #191c1d;
+}
+.footer .column ul {
+  padding: 0px;
+}
+
+.footer  p {
+    line-height: 22px;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.footer li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.footer .subscribe input[type="email"] {
+    background: #f7f9fc;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 78%;
+    color: var(--title-color);
+    font-weight: 600;
+    border-radius: var(--card-curve);
+}
+.subscribe input[type="email"] {
+    background: #f7f9fc;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 78%;
+    color: var(--title-color);
+    font-weight: 600;
+    border-radius: var(--card-curve);
+
+}
+.footer .subscribe button {
+  text-align: center;
+  background: #dc4f72;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 20%;
+  color: #fff;
+  border-radius: var(--card-curve);
+}
+.footer .social {
+  display: flex;
+  list-style: none;
+}
+
+.footer .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.footer .social li a {
+  color: var(--title-color);
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+.dark .footer .social li a {
+  color: #b7b7b7;
+}
+.footer .social li a:hover {
+  color: #dc4f72;
+  cursor: pointer;
+}
+
+footer .CopyRights a {
+  color: #5a5a5a;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+footer .CopyRights a:hover {
+  color: #de5979;
+}
+
 /* overlay css */
 .overlay {
   position: fixed;
@@ -980,4 +1147,8 @@ h2 {
 .fas.fa-info-circle {
   font-size: 24px;
   color: blue;
+}
+
+.footer ul li a:hover{
+  color: #de5979;
 }
