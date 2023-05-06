@@ -481,6 +481,11 @@ html body {
     font-size: 16px;
 }
 
+.footer li {
+    list-style: none;
+    margin: 10px 0;
+}
+
 .footer .subscribe input[type="email"] {
     background: var(--light-bg-color);
     border: none;
