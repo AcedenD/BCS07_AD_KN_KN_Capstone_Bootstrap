@@ -974,3 +974,13 @@ a {
     line-height: 45px;
   }
 }
+
+.footer .CopyRights a {
+  color: #5a5a5a;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.footer .CopyRights a:hover {
+  color: #de5979;
+}
