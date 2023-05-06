@@ -95,7 +95,7 @@ div.mode-container i {
 }
 
 .dark #breadcrumb .active {
-  color: white;
+  color: white !important;
 }
 
 .dark .services,
