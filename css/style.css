@@ -448,6 +448,7 @@ html body {
 
 .dark .footer .w3l-footer-16-main h4 {
   color: #fff;
+}
 
 .footer  h4 {
     font-size: 18px;
@@ -472,12 +473,14 @@ html body {
 }
 .footer .column ul {
   padding: 0px;
+}
 
 .footer  p {
     line-height: 22px;
     color: var(--text-color);
     font-size: 16px;
 }
+
 .footer .subscribe input[type="email"] {
     background: var(--light-bg-color);
     border: none;
