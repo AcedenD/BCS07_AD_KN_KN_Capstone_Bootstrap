@@ -73,6 +73,13 @@ a {
   box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
 }
 
+.dark .banner .banner__left h3 {
+  color: #eeeeee;
+}
+.dark .banner .banner__left p {
+  color: #b7b7b7;
+}
+
 /* TOOLS */
 .tools {
   padding: 16px 25px;
