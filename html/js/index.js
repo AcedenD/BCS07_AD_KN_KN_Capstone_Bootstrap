@@ -50,3 +50,35 @@ icon.addEventListener('click', function() {
 xMark.addEventListener('click', function() {
   overlay.style.display = 'none'; /* Hide the overlay */
 });
+
+
+function searchPage(){
+    console.log("searchPage() called");
+    var searchValue = document.getElementById("searchInput").value;
+    console.log("searchValue: " + searchValue);
+
+    if (searchValue == "") {
+        alert("Please enter a search term");
+        return;
+    }else if(searchValue == "home" ||searchValue == "about" || searchValue == "services" || searchValue == "contact" || searchValue == "blog" || searchValue == "landing" || searchValue == "contact" || searchValue == "home page" ||searchValue == "about page" || searchValue == "services page" || searchValue == "contact page" || searchValue == "blog page" || searchValue == "landing page" || searchValue == "contact page" ) {
+        window.location.href = "search.html?search=" + searchValue;
+    }else {
+        window.location.href = "searchNothing.html";
+    }
+}
+
+function searchPageNothing(){
+  console.log("searchPage() called");
+  var searchValue = document.getElementById("searchInputNothing").value;
+  console.log("searchValue: " + searchValue);
+
+  if (searchValue == "") {
+      alert("Please enter a search term");
+      return;
+  }else if(searchValue == "home" ||searchValue == "about" || searchValue == "services" || searchValue == "contact" || searchValue == "blog" || searchValue == "landing" || searchValue == "contact" || searchValue == "home page" ||searchValue == "about page" || searchValue == "services page" || searchValue == "contact page" || searchValue == "blog page" || searchValue == "landing page" || searchValue == "contact page" ) {
+      window.location.href = "search.html?search=" + searchValue;
+  }else {
+      alert("No results found for ' " + searchValue + " '");
+  }
+}
+
