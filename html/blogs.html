@@ -7,7 +7,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
@@ -15,21 +14,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- carosel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- css  -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+
 </head>
 
-<body>
+<body id="myBody">
+
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
             <div class="container">
-                <a class="navbar-brand d-flex" href="#">
+                <a class="navbar-brand d-flex" href="./index.html">
                     <i class="fa-regular fa-handshake mx-2"></i> Masterwork</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-black">
@@ -37,38 +54,62 @@
                             <a class="nav-link" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./about.html">About</a>
+                            <a class="nav-link" href="./about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./services.html">Services</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
 
                                 Pages
                                 <i class="fa fa-angle-down"></i>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item active" href="./blogs.html">Blog Posts</a></li>
-                                <li><a class="dropdown-item" href="./landing.html">Landing page</a></li>
-                                <li>
-                                </li>
-                                <li><a class="dropdown-item" href="./error.html">404 page</a></li>
-                            </ul>
+                            <div class="sub-menu dropdown-menu">
+                                <a class="dropdown-item" href="./blogs.html">Blog Posts</a>
+                                <a class="dropdown-item" href="./landing.html">Landing page</a>
+                                <a class="dropdown-item" href="./error.html">404 page</a>
+                            </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
                         </li>
                     </ul>
+                    <div class="search-right">
+                        <a href="#search" class="search-search">
+                            <span class="fa fa-search
+                                "></span>
+                        </a>
+                        <div class="overlay">
+                            <div class="overlay-content d-flex align-items-center ">
+                                <form class="d-flex gap-0" action="">
+                                    <input id="searchInput" type="text" placeholder="Enter Keyword" required>
+                                    <button onclick="searchPage()" type="button" id="searchBtn">Search</button>
+                                    <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
 
-                    <a href="" class="search-search">
-                        <span class="fa fa-search
-                            "></span>
-                    </a>
-                    <button type="button" class="nav_btn px-4 py-3 rounded-1 mx-2">
-                        SCHEDULE A DEMO
-                    </button>
 
+
+                    <div class="top-quote">
+                        <a href="#" class="nav_btn px-4 py-3 rounded-1 mx-2">
+                            SCHEDULE A DEMO
+                        </a>
+                    </div>
+
+
+
+
+
+                    <!-- <button class="btn" id="switchButton" title="Click to switch theme">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button> -->
+                </div>
+                <div class="mode-container" id="switchButton" onclick="changeTheme()">
+                    <i class="far fa-moon"></i>
+                    <i class="far fa-sun"></i>
                 </div>
             </div>
         </nav>
@@ -76,15 +117,325 @@
     <main>
         <section id="breadcrumb">
             <div class="container">
-                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb" class="">
+                <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb" class="">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page"> » Blog page </li>
                     </ol>
                 </nav>
             </div>
         </section>
+        <!-- carosel -->
+        <section class="carosel">
+            <div class="owl-carousel owl-theme news_carosel">
+                <div class="item" style="width: 1100px;">
+                    <div class="single_item">
+                        <div class="single_item_img">
+                            <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/" tabindex="-1">
+                                <img width="900" height="601"
+                                    src="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="Hello world!" decoding="async" loading="lazy"
+                                    srcset="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg 900w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-300x200.jpg 300w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-768x513.jpg 768w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-360x240.jpg 360w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-720x480.jpg 720w"
+                                    sizes="(max-width: 900px) 100vw, 900px"> </a>
 
+                            <p class="carosel-date">1 March, 2021</p>
+                        </div>
+                        <div class="single_item_info">
+                            <div class="m-lg-5">
+                                <a href="https://wp.w3layouts.com/masterwork/category/business/" rel="category tag"
+                                    class="tag-text">Business</a>
+
+                                <h4 class="news_title">
+                                    <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">Hello
+                                        world!</a>
+                                </h4>
+
+
+
+                                <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/" class="btn-news">
+                                    Read More
+                                    <span class="fa fa-arrow-right icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="item" style="width: 1100px;">
+                    <div class="single_item">
+                        <div class="single_item_img">
+                            <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/" tabindex="-1">
+                                <img width="900" height="601"
+                                    src="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="Hello world!" decoding="async" loading="lazy"
+                                    srcset="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg 900w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-300x200.jpg 300w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-768x513.jpg 768w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-360x240.jpg 360w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-720x480.jpg 720w"
+                                    sizes="(max-width: 900px) 100vw, 900px"> </a>
+
+                            <p class="carosel-date">1 March, 2021</p>
+                        </div>
+                        <div class="single_item_info">
+                            <div class="m-lg-5">
+                                <a href="https://wp.w3layouts.com/masterwork/category/business/" rel="category tag"
+                                    class="tag-text">Business</a>
+
+                                <h4 class="news_title">
+                                    <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">Corporate,
+                                        Business & Digital
+                                        Agency</a>
+                                </h4>
+
+
+
+                                <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/" class="btn-news">
+                                    Read More
+                                    <span class="fa fa-arrow-right icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="item" style="width: 1100px;">
+                    <div class="single_item">
+                        <div class="single_item_img">
+                            <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/" tabindex="-1">
+                                <img width="900" height="601"
+                                    src="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="Hello world!" decoding="async" loading="lazy"
+                                    srcset="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg 900w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-300x200.jpg 300w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-768x513.jpg 768w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-360x240.jpg 360w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-720x480.jpg 720w"
+                                    sizes="(max-width: 900px) 100vw, 900px"> </a>
+
+                            <p class="carosel-date">1 March, 2021</p>
+                        </div>
+                        <div class="single_item_info">
+                            <div class="m-lg-5">
+                                <a href="https://wp.w3layouts.com/masterwork/category/business/" rel="category tag"
+                                    class="tag-text">Business</a>
+
+                                <h4 class="news_title">
+                                    <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">The Best
+                                        Choice For Your
+                                        Successful Business!</a>
+                                </h4>
+
+
+
+                                <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/" class="btn-news">
+                                    Read More
+                                    <span class="fa fa-arrow-right icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="item" style="width: 1100px;">
+                    <div class="single_item">
+                        <div class="single_item_img">
+                            <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/" tabindex="-1">
+                                <img width="900" height="601"
+                                    src="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="Hello world!" decoding="async" loading="lazy"
+                                    srcset="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg 900w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-300x200.jpg 300w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-768x513.jpg 768w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-360x240.jpg 360w, https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-720x480.jpg 720w"
+                                    sizes="(max-width: 900px) 100vw, 900px"> </a>
+
+                            <p class="carosel-date">1 March, 2021</p>
+                        </div>
+                        <div class="single_item_info">
+                            <div class="m-lg-5">
+                                <a href="https://wp.w3layouts.com/masterwork/category/business/" rel="category tag"
+                                    class="tag-text">Business</a>
+
+                                <h4 class="news_title">
+                                    <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">Hello
+                                        world!</a>
+                                </h4>
+
+
+
+                                <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/" class="btn-news">
+                                    Read More
+                                    <span class="fa fa-arrow-right icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <!-- titlecarousel  -->
+
+            </div>
+        </section>
+        <!-- intro  -->
+        <section class="news" id="news">
+            <div class="py-5">
+                <div class="container py-lg-3">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-5">
+                            <article id="post-1" class="news_content">
+                                <div class="news_info">
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">
+                                        <img width="900" height="601"
+                                            src="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg"
+                                            class="news_img" alt="Hello world!" decoding="async" srcset="
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg         900w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-300x200.jpg 300w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-768x513.jpg 768w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-360x240.jpg 360w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-720x480.jpg 720w
+                        " sizes="(max-width: 900px) 100vw, 900px" />
+                                    </a>
+
+                                    <p class="date">1 March, 2021</p>
+
+                                    <div class="news_body">
+                                        <a href="https://wp.w3layouts.com/masterwork/category/business/"
+                                            rel="category tag" class="tag-text">Business</a>
+
+                                        <h4 class="news_title">
+                                            <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">Hello
+                                                world!</a>
+                                        </h4>
+
+                                        <p class="loz"></p>
+
+                                        <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/"
+                                            class="btn-news">
+                                            Read More
+                                            <span class="fa fa-arrow-right icon"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- </article>#post-1 -->
+
+                        <div class="col-lg-4 col-md-6 mt-5">
+                            <article id="post-1" class="news_content">
+                                <div class="news_info">
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">
+                                        <img width="900" height="601"
+                                            src="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg"
+                                            class="news_img" alt="Hello world!" decoding="async" srcset="
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg         900w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-300x200.jpg 300w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-768x513.jpg 768w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-360x240.jpg 360w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-720x480.jpg 720w
+                        " sizes="(max-width: 900px) 100vw, 900px" />
+                                    </a>
+
+                                    <p class="date">1 March, 2021</p>
+
+                                    <div class="news_body">
+                                        <a href="https://wp.w3layouts.com/masterwork/category/business/"
+                                            rel="category tag" class="tag-text">Business</a>
+
+                                        <h4 class="news_title">
+                                            <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">Hello
+                                                world!</a>
+                                        </h4>
+
+                                        <p class="loz"></p>
+
+                                        <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/"
+                                            class="btn-news">
+                                            Read More
+                                            <span class="fa fa-arrow-right icon"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- </article>#post-40 -->
+
+                        <div class="col-lg-4 col-md-6 mt-5">
+                            <article id="post-1" class="news_content">
+                                <div class="news_info">
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">
+                                        <img width="900" height="601"
+                                            src="https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg"
+                                            class="news_img" alt="Hello world!" decoding="async" srcset="
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1.jpg         900w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-300x200.jpg 300w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-768x513.jpg 768w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-360x240.jpg 360w,
+                          https://wp.w3layouts.com/masterwork/wp-content/uploads/sites/26/2021/03/b1-720x480.jpg 720w
+                        " sizes="(max-width: 900px) 100vw, 900px" />
+                                    </a>
+
+                                    <p class="date">1 March, 2021</p>
+
+                                    <div class="news_body">
+                                        <a href="https://wp.w3layouts.com/masterwork/category/business/"
+                                            rel="category tag" class="tag-text">Business</a>
+
+                                        <h4 class="news_title">
+                                            <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/">Hello
+                                                world!</a>
+                                        </h4>
+
+                                        <p class="loz"></p>
+
+                                        <a href="https://wp.w3layouts.com/masterwork/2021/03/01/hello-world/"
+                                            class="btn-news">
+                                            Read More
+                                            <span class="fa fa-arrow-right icon"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- </article>#post-38 -->
+                    </div>
+
+                    <!-- news_pagination -->
+                    <ul class="news_pagination mt-5 justify-content-center d-flex">
+
+                        <li>
+                            <span class="page-numbers current">1</span>
+                        </li>
+                        <li>
+                            <a class="page-numbers" href="https://wp.w3layouts.com/masterwork/blog-posts/page/2/">2</a>
+                        </li>
+                        <li>
+                            <a class="page-numbers" href="https://wp.w3layouts.com/masterwork/blog-posts/page/3/">3</a>
+                        </li>
+                        <li>
+                            <a class="next page-numbers"
+                                href="https://wp.w3layouts.com/masterwork/blog-posts/page/2/">Next</a>
+                        </li>
+
+                    </ul>
+                    <!-- //pagination -->
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <!-- footer -->
@@ -153,7 +504,7 @@
 
                         <div class="col-lg-6 col-md-12column pl-lg-5 column4 mt-lg-0 mt-5">
                             <h3>Newsletter</h3>
-                            <div class="end-column">
+                            <div class="end-column subscribe">
                                 <h4>Get latest updates and offers.</h4>
                                 <form action="" class="subscribe" method="post">
                                     <input type="email" name="email" placeholder="Email Address" required="" />
@@ -217,6 +568,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- carosel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoWidth: true,
+            items: 1
+        })
+    </script>
+
+    <!-- Color changing JavaScript -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
