@@ -22,7 +22,9 @@ function createSearchElement(search) {
     document.getElementById("searchResults").appendChild(searchElement);
 }
 
-function searchPage() {
+function searchPageSearch() {
+    console.log("searchPage() from serach.js called");
+
     if(search == "home" ||search == "about" || search == "services" || search == "contact" || search == "blog" || search == "landing" || search == "contact" ) {
         createSearchElement(search + " page");
     } else if(search == "home page" ||search == "about page" || search == "services page" || search == "contact page" || search == "blog page" || search == "landing page" || search == "contact page" ) {
@@ -30,5 +32,5 @@ function searchPage() {
     }
 }
 
-searchPage();
+searchPageSearch();
 
