@@ -166,7 +166,7 @@
           </div>
         </div>
         <!-- Item 3 -->
-        <div class="col-lg-4 col-md-6 mt-5">
+        <div class="col-lg-4 mt-5">
           <div class="tools__item">
             <a href="#">
               <img src="./img/s3.png" alt="s3.png" />
@@ -181,7 +181,6 @@
       </div>
     </div>
   </section>
-
   <!-- ABOUT US -->
   <section class="aboutUs">
     <div class="container">
@@ -209,7 +208,7 @@
   <!-- NUMBER -->
   <section class="number">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <!-- item 1 -->
         <div class="col-lg-4 col-sm-6">
           <div class="number__item">
@@ -281,7 +280,7 @@
             <div class="accordion__item active">
               <div class="accordion__header">
                 <h2>There are many passages but the majority?</h2>
-                <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                <i class="arrow fa-sharp fa-solid fa-chevron-up"></i>
               </div>
               <div class="accordion__body">
                 <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
@@ -293,7 +292,7 @@
             <div class="accordion__item active">
               <div class="accordion__header">
                 <h2>There are many passages but the majority?</h2>
-                <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                <i class="arrow fa-sharp fa-solid fa-chevron-up"></i>
               </div>
               <div class="accordion__body">
                 <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
@@ -305,7 +304,7 @@
             <div class="accordion__item active">
               <div class="accordion__header">
                 <h2>There are many passages but the majority?</h2>
-                <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                <i class="arrow fa-sharp fa-solid fa-chevron-up"></i>
               </div>
               <div class="accordion__body">
                 <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
@@ -317,7 +316,7 @@
             <div class="accordion__item active">
               <div class="accordion__header">
                 <h2>There are many passages but the majority?</h2>
-                <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                <i class="arrow fa-sharp fa-solid fa-chevron-up"></i>
               </div>
               <div class="accordion__body">
                 <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
@@ -329,7 +328,7 @@
             <div class="accordion__item active">
               <div class="accordion__header">
                 <h2>There are many passages but the majority?</h2>
-                <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                <i class="arrow fa-sharp fa-solid fa-chevron-up"></i>
               </div>
               <div class="accordion__body">
                 <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
@@ -341,7 +340,7 @@
             <div class="accordion__item active">
               <div class="accordion__header">
                 <h2>There are many passages but the majority?</h2>
-                <i class="arrow fa-sharp fa-solid fa-chevron-down"></i>
+                <i class="arrow fa-sharp fa-solid fa-chevron-up"></i>
               </div>
               <div class="accordion__body">
                 <p>Voluptates amet earum velit nobis aliquam laboriosam nihil debitis facere voluptatibus consectetur
@@ -368,7 +367,7 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-10 mx-auto">
-          <div class="d-flex flex-column w-100">
+          <div class="d-md-flex flex-column w-100 d-none">
             <ul class="tabs-list">
               <li class="tab-item active" role="tab" id="tab-1">
                 Project One </li>
@@ -437,8 +436,106 @@
               </div>
             </div>
           </div>
+
+          <!-- Responsive accordion -->
+          <div class="accordion d-block d-md-none" id="myAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Project 1
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                  <div class="products-content active" id="content-1">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3>
+                          Why a visual identity system is more memorable </h3>
+                        <p>
+                          Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                          praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                          blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                          pariatur. </p>
+                        <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                          Know more</a>
+                      </div>
+                      <div class="col-md-6 mt-md-0 mt-5">
+                        <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b4.jpg"
+                          class="img-accordion img-fluid img-curve" alt="project image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Project 2
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                  <div class="products-content" id="content-2">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b5.jpg"
+                          class="img-accordion img-fluid img-curve" alt="project image">
+                      </div>
+                      <div class="col-md-6 mt-md-0 mt-5">
+                        <h3>
+                          Make website that looks Lorem, ipsum dolor. </h3>
+                        <p>
+                          Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                          praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                          blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                          pariatur. </p>
+                        <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                          Know more</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Project 3
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                  <div class="products-content" id="content-3">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3>
+                          Why a visual identity system is more memorable </h3>
+                        <p>
+                          Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores
+                          praesentium nulla quibusdam repellendus. consequatur minus aliquam corrupti
+                          blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit
+                          pariatur. </p>
+                        <a href="#url" class="btn btn-outline-primary theme-button mt-3">
+                          Know more</a>
+                      </div>
+                      <div class="col-md-6 mt-md-0 mt-5">
+                        <img src="https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b6.jpg"
+                          class="img-accordion img-fluid img-curve" alt="project image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
   <!-- TESTIMONIALS -->

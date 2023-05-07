@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s;
 }
 
 html body {
@@ -459,6 +458,7 @@ header .navbar .nav_btn {
   font-size: 14px;
   font-weight: 700;
   transition: all 0.5s;
+  display: inline-block;
 }
 
 header .navbar .nav_btn:hover {
@@ -908,10 +908,10 @@ h2 {
   background: #191c1d;
 }
 
-
 .footer {
-    background: #f7f9fc;
+  background: #f7f9fc;
 }
+
 .footer .below-section{
     border-top: 1px solid #eee;
 }
@@ -921,6 +921,7 @@ h2 {
     color: #2C3038;
     margin-bottom: 30px;
     font-weight: 700;
+
 
 }
 .dark .footer .w3l-footer-16-main h3 {
@@ -933,12 +934,15 @@ h2 {
   margin: 10px 0;
  */
 
+
+
 .footer  h3 {
     font-size: 20px;
     line-height: 25px;
     color: #2C3038;
     margin-bottom: 30px;
     font-weight: 700;
+
 }
 .column li a {
   color: #656f7b;
@@ -963,12 +967,14 @@ h2 {
   color: #fff;
 }
 
+
 .footer  h4 {
     font-size: 18px;
     line-height: 25px;
     color: #2C3038;
     margin-bottom: 30px;
     font-weight: 500;
+
 
 }
 .footer form {
@@ -988,15 +994,17 @@ h2 {
   padding: 0px;
 }
 
+
 .footer  p {
     line-height: 22px;
     color: #5a5a5a;
     font-size: 16px;
+
 }
 
 .footer li {
-    list-style: none;
-    margin: 10px 0;
+  list-style: none;
+  margin: 10px 0;
 }
 
 .footer .subscribe input[type="email"] {
@@ -1148,6 +1156,6 @@ footer .CopyRights a:hover {
   color: blue;
 }
 
-.footer ul li a:hover{
+.footer ul li a:hover {
   color: #de5979;
 }

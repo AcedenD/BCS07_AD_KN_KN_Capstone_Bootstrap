@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s;
 }
 
 html body {
@@ -142,9 +141,8 @@ html body {
 }
 
 .hero_img:hover {
-    transform: var(--transformY);
-    transition: 0.3s ease-in-out;
-
+  transform: var(--transformY);
+  transition: 0.3s ease-in-out;
 }
 /* our  */
 .our .features h5 {
@@ -192,47 +190,49 @@ html body {
 }
 
 .card_img {
-    width: 100%;
-    height: 250px;
-    margin: 0px 0;
-    text-align: center;
-    transition: all 0.3s ease;
-    padding: 0 30px;
+  width: 100%;
+  height: 250px;
+  margin: 0px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding: 0 30px;
 }
 .card_img .card_icon {
-    position: relative;
-    top: 60px;
-    display: inline-block;
-    margin-bottom: 68px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    transition: all 0.3s ease;
-    border-radius: 100%;
-    color: #fff;
-    font-size: 26px;
-    background-color: var(--primary);
+  position: relative;
+  top: 60px;
+  display: inline-block;
+  margin-bottom: 68px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  transition: all 0.3s ease;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 26px;
+  background-color: var(--primary);
 }
-.features_card1, .features_card2,.features_card3,.features_card4{
-    background: var(--bg-color);
-    border-radius: var(--card-curve);
-    box-shadow: var(--card-box-shadow);
+.features_card1,
+.features_card2,
+.features_card3,
+.features_card4 {
+  background: var(--bg-color);
+  border-radius: var(--card-curve);
+  box-shadow: var(--card-box-shadow);
 }
 .card_img .mission {
-    position: relative;
-    top: 10px;
-    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    font-size: 22px;
-    line-height: 28px;
-    font-weight: 700;
-    color: var(--title-color);
+  position: relative;
+  top: 10px;
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--title-color);
 }
 .card_img .description {
-    margin: -6em auto 0;
-    opacity: 0;
-    transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: scale(0);
-
+  margin: -6em auto 0;
+  opacity: 0;
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: scale(0);
 }
 .description a {
   font-size: 17px;
@@ -243,21 +243,20 @@ html body {
 }
 
 .card_img:hover {
-    padding: 0 30px;
+  padding: 0 30px;
 }
 .card_img:hover .card_icon {
-    top: -40px;
-    background: var(--primary);
+  top: -40px;
+  background: var(--primary);
 }
 .card_img:hover .mission {
-    top: -80px;
+  top: -80px;
 }
 .card_img:hover .description {
-    opacity: 1;
-    transform: scale(1);
-    font-size: 14px;
-    line-height: 2.2em;
-
+  opacity: 1;
+  transform: scale(1);
+  font-size: 14px;
+  line-height: 2.2em;
 }
 /* watch  */
 #small-dialog {
@@ -273,16 +272,15 @@ html body {
 }
 
 .watch .video-play-icon {
-    background: var(--bg-color);
-    display: inline-block;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    border-radius: 50%;
-    transition: 0.3s ease-in-out;
-    animation: ripple 1s linear infinite;
-    color: #dc4f72;
-
+  background: var(--bg-color);
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  animation: ripple 1s linear infinite;
+  color: #dc4f72;
 }
 .theme-button {
   display: inline-block !important;
@@ -308,15 +306,14 @@ html body {
 }
 
 .myteam .team_img {
-    width: 100%;
-    height: 250px;
-    display: inline-block;
-    overflow: hidden;
-    background: #f3f6f9;
+  width: 100%;
+  height: 250px;
+  display: inline-block;
+  overflow: hidden;
+  background: #f3f6f9;
 }
 .myteam .team_img a {
-    display: block;
-
+  display: block;
 }
 .myteam .column a img {
   display: block;
@@ -324,13 +321,12 @@ html body {
 }
 
 .myteam .team_content {
-    padding: 16px;
-    background: var(--bg-color);
-    border-radius: 0 0 6px 6px;
-    border: 1px solid var(--border-color);
-    border-top: none;
-    margin-top: -6px;
-
+  padding: 16px;
+  background: var(--bg-color);
+  border-radius: 0 0 6px 6px;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  margin-top: -6px;
 }
 .myteam .team-info p {
   font-size: 16px;
@@ -361,12 +357,11 @@ html body {
 }
 
 .myteam h3.member_name a {
-    font-size: 22px;
-    line-height: 26px;
-    color: var(--title-color);
-    font-weight: 700;
-    text-decoration: none;
-
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--title-color);
+  font-weight: 700;
+  text-decoration: none;
 }
 .myteam .team-info:hover {
   box-shadow: var(--card-hover-box-shadow);
@@ -375,9 +370,8 @@ html body {
 }
 
 .myteam .team-info:hover .member_name a {
-    color: var(--primary);
-    transition: 0.3s ease;
-
+  color: var(--primary);
+  transition: 0.3s ease;
 }
 /* ready  */
 .btn-outline-primary {
@@ -391,25 +385,22 @@ html body {
 }
 /* footer */
 
-
 .dark .footer .py-5 {
   background: #191c1d;
 }
 
-
 .footer {
-    background: var(--light-bg-color);
+  background: var(--light-bg-color);
 }
-.footer .below-section{
-    border-top: 1px solid var(--border-color);
+.footer .below-section {
+  border-top: 1px solid var(--border-color);
 }
-.footer  h3 {
-    font-size: 20px;
-    line-height: 25px;
-    color: var(--title-color);
-    margin-bottom: 30px;
-    font-weight: 700;
-
+.footer h3 {
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 .dark .footer .w3l-footer-16-main h3 {
   color: #fff;
@@ -421,12 +412,12 @@ html body {
   margin: 10px 0;
  */
 
-.footer  h3 {
-    font-size: 20px;
-    line-height: 25px;
-    color: var(--title-color);
-    margin-bottom: 30px;
-    font-weight: 700;
+.footer h3 {
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 .column li a {
   color: #656f7b;
@@ -451,13 +442,12 @@ html body {
   color: #fff;
 }
 
-.footer  h4 {
-    font-size: 18px;
-    line-height: 25px;
-    color: var(--title-color);
-    margin-bottom: 30px;
-    font-weight: 500;
-
+.footer h4 {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--title-color);
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 .footer form {
   display: flex;
@@ -476,39 +466,38 @@ html body {
   padding: 0px;
 }
 
-.footer  p {
-    line-height: 22px;
-    color: var(--text-color);
-    font-size: 16px;
+.footer p {
+  line-height: 22px;
+  color: var(--text-color);
+  font-size: 16px;
 }
 
 .footer li {
-    list-style: none;
-    margin: 10px 0;
+  list-style: none;
+  margin: 10px 0;
 }
 
 .footer .subscribe input[type="email"] {
-    background: var(--light-bg-color);
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    outline: none;
-    width: 78%;
-    color: var(--title-color);
-    font-weight: 600;
-    border-radius: var(--card-curve);
+  background: var(--light-bg-color);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  width: 78%;
+  color: var(--title-color);
+  font-weight: 600;
+  border-radius: var(--card-curve);
 }
 .subscribe input[type="email"] {
-    background: var(--light-bg-color);
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    outline: none;
-    width: 78%;
-    color: var(--title-color);
-    font-weight: 600;
-    border-radius: var(--card-curve);
-
+  background: var(--light-bg-color);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  outline: none;
+  width: 78%;
+  color: var(--title-color);
+  font-weight: 600;
+  border-radius: var(--card-curve);
 }
 .footer .subscribe button {
   text-align: center;
@@ -738,6 +727,7 @@ header .navbar .nav_btn {
   font-size: 14px;
   font-weight: 700;
   transition: all 0.5s;
+  display: inline-block;
 }
 
 header .navbar .nav_btn:hover {
@@ -1081,6 +1071,6 @@ footer ul {
   padding-left: 0;
 }
 
-.footer ul li a:hover{
+.footer ul li a:hover {
   color: #de5979;
 }

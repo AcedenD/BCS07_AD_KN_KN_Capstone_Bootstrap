@@ -553,6 +553,9 @@ a {
   p {
   color: #b7b7b7;
 }
+.dark .arrow {
+  color: #fff;
+}
 
 /* PROJECTS */
 .products .subtitle {
@@ -672,13 +675,62 @@ a {
 .products .tabs-container .products-content {
   display: none;
 }
+.dark .theme-button {
+  background-color: #141617 !important;
+}
+.dark .theme-button:hover {
+  background-color: #dc4f72 !important;
+}
+.theme-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 79, 114, 0.5);
+}
+/* Responsive Accordion Projects */
+.img-accordion {
+  border-radius: 6px;
+}
+.accordion-button {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.dark .accordion-button {
+  color: #fff;
+  background-color: #000;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button[aria-expanded="true"] {
+  color: #dc4f72;
+  border-bottom: 3px solid #dc4f72;
+  background-color: #fff;
+}
+.dark .accordion-button[aria-expanded="true"] {
+  background-color: #000;
+}
+.dark .accordion-button::after.collapse {
+  color: #fff !important;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-button i {
+  margin-left: auto;
+  transition: all 0.3s;
+}
+.accordion-button.collapsed i {
+  transform: rotate(180deg);
+}
+.dark .accordion-collapse {
+  background-color: #000;
+}
 
 /* TESTIMONIALS */
 .testimonials {
   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.77)),
     url(./../img/b3.jpeg);
   background-size: cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
@@ -687,7 +739,7 @@ a {
   background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.77)),
     url(./../img/b3.jpeg);
   background-size: cover;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
@@ -972,6 +1024,12 @@ a {
   .banner .banner__left h3 {
     font-size: 40px;
     line-height: 45px;
+  }
+  header .navbar .collapse .nav-item .dropdown-menu {
+    transform: translateX(-2px) !important;
+  }
+  header .navbar .collapse .nav-item .dropdown-menu:before {
+    left: 48% !important;
   }
 }
 
