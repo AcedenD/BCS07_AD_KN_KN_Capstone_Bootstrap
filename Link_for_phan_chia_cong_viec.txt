@@ -1,0 +1,6 @@
+
+https://docs.google.com/spreadsheets/d/19-dkZiArV6n3ez-UV4VDM4jKh3BmSMXToVlCzY3j7Cs/edit?usp=sharing
+
+Xin chào mentors, mình chỉ muốn lưu ý là trong quá trình làm đồ án này Kỷ Nguyên đã nhiều lần trì hoãn công việc dẫn đến đồ án bị đình trệ.
+không được đầy đủ. Hai trang của anh ấy mà chúng tôi đồng ý cho anh ấy làm là "About" và "Blog". Nghi và tôi phải tự tay sửa chữa code của anh ấy vì anh ấy không bao giờ kéo main mới nhất. Thêm vào đó, anh ta sao chép mã từ nguồn ban đầu nhiều lần. Tôi đã nói với anh ấy để thay đổi nó nhưng cuối cùng, anh ấy vẫn chỉ sao chép từ nguồn. Tôi đã không biết cho đến khi hết hạn. Đã quá muộn để tôi hoặc Nghi sửa chữa nó. Tôi chỉ muốn ghi chú này ở đây với hy vọng rằng bạn sẽ hiểu được vấn đề rất lớn mà mình và Nghi gặp phải.
+-Aden
