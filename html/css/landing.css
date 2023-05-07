@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* dark theme  for about us from aboutUs*/
+
+.dark main section.hero {
+    background-color: black!important;
+}
+
+.dark main section.hero h2{
+    color: white!important;
+}
+
+.dark main section.hero li{
+    color: white!important;
+}
+
+#myBody main .our_history h5{
+    font-size: 26px;
+    line-height: 32px;
+    color: #2C3038;
+    font-weight: 700;
+}
+
+.dark main .our_history h5{
+    color: white!important;
+}
