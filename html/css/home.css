@@ -573,6 +573,9 @@ a {
   font-weight: 700;
   line-height: 46px;
 }
+.dark .products h3 {
+  color: #fff;
+}
 
 .products p {
   color: #5a5a5a;
@@ -604,7 +607,7 @@ a {
 }
 
 .dark .products .tabs-list .tab-item {
-  background-color: #131617;
+  background-color: transparent;
   border-bottom: 3px solid #333;
   color: #fff;
 }
@@ -620,7 +623,7 @@ a {
 }
 
 .dark .products .tabs-list .tab-item.active {
-  background-color: #131617;
+  background-color: transparent;
 }
 
 .products .tabs-container {
@@ -629,7 +632,7 @@ a {
 }
 
 .dark .products .tabs-container {
-  background-color: #131617;
+  background-color: transparent;
   padding: 0;
 }
 
