@@ -94,7 +94,7 @@ div.mode-container i {
 }
 
 .dark #breadcrumb .active {
-  color: white;
+  color: white !important;
 }
 
 .dark .services,
@@ -850,7 +850,7 @@ h2 {
 
 .getInTouch .contact-info p {
   font-size: 18px;
-  color: var(--text-color);
+  color: #5a5a5a;
   /* line-height: 28px; */
   font-weight: 600;
   /* padding: 0; */
@@ -911,15 +911,18 @@ h2 {
 .footer {
   background: #f7f9fc;
 }
-.footer .below-section {
-  border-top: 1px solid var(--border-color);
+
+.footer .below-section{
+    border-top: 1px solid #eee;
 }
-.footer h3 {
-  font-size: 20px;
-  line-height: 25px;
-  color: var(--title-color);
-  margin-bottom: 30px;
-  font-weight: 700;
+.footer  h3 {
+    font-size: 20px;
+    line-height: 25px;
+    color: #2C3038;
+    margin-bottom: 30px;
+    font-weight: 700;
+
+
 }
 .dark .footer .w3l-footer-16-main h3 {
   color: #fff;
@@ -931,12 +934,15 @@ h2 {
   margin: 10px 0;
  */
 
-.footer h3 {
-  font-size: 20px;
-  line-height: 25px;
-  color: var(--title-color);
-  margin-bottom: 30px;
-  font-weight: 700;
+
+
+.footer  h3 {
+    font-size: 20px;
+    line-height: 25px;
+    color: #2C3038;
+    margin-bottom: 30px;
+    font-weight: 700;
+
 }
 .column li a {
   color: #656f7b;
@@ -950,7 +956,7 @@ h2 {
 .footer .end-column {
   background-color: white;
   padding: 2em;
-  border-radius: var(--card-curve);
+  border-radius: 6px;
   box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
 }
 .dark .footer .end-column {
@@ -961,12 +967,15 @@ h2 {
   color: #fff;
 }
 
-.footer h4 {
-  font-size: 18px;
-  line-height: 25px;
-  color: var(--title-color);
-  margin-bottom: 30px;
-  font-weight: 500;
+
+.footer  h4 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #2C3038;
+    margin-bottom: 30px;
+    font-weight: 500;
+
+
 }
 .footer form {
   display: flex;
@@ -985,10 +994,12 @@ h2 {
   padding: 0px;
 }
 
-.footer p {
-  line-height: 22px;
-  color: var(--text-color);
-  font-size: 16px;
+
+.footer  p {
+    line-height: 22px;
+    color: #5a5a5a;
+    font-size: 16px;
+
 }
 
 .footer li {
@@ -997,26 +1008,27 @@ h2 {
 }
 
 .footer .subscribe input[type="email"] {
-  background: #f7f9fc;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  outline: none;
-  width: 78%;
-  color: var(--title-color);
-  font-weight: 600;
-  border-radius: var(--card-curve);
+    background: #f7f9fc;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 78%;
+    color: #2C3038;
+    font-weight: 600;
+    border-radius: 6px;
 }
 .subscribe input[type="email"] {
-  background: #f7f9fc;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  outline: none;
-  width: 78%;
-  color: var(--title-color);
-  font-weight: 600;
-  border-radius: var(--card-curve);
+    background: #f7f9fc;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 78%;
+    color: #2C3038;
+    font-weight: 600;
+    border-radius: 6px;
+
 }
 .footer .subscribe button {
   text-align: center;
@@ -1029,7 +1041,7 @@ h2 {
   cursor: pointer;
   width: 20%;
   color: #fff;
-  border-radius: var(--card-curve);
+  border-radius: 6px;
 }
 .footer .social {
   display: flex;
@@ -1041,7 +1053,7 @@ h2 {
   margin-right: 5px;
 }
 .footer .social li a {
-  color: var(--title-color);
+  color: #2C3038;
   width: 36px;
   height: 36px;
   line-height: 36px;
